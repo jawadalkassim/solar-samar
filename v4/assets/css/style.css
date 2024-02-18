@@ -1231,8 +1231,8 @@ img#tscert {
 }
 .logo img {
     width: 100px;
-    max-height:90px;
-    margin-top: 50px;
+    max-height:110px;
+    margin-top: 70px;
 }
 
 @media (max-width: 1200px) {
