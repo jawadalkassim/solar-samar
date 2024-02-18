@@ -16744,7 +16744,7 @@ postCall("https://pingpost.pro/receive-data", data).then(x => x.json()).then(x =
                                             console.log(x.status);
 
                                             if (
-                                                x.status === "POST_VALID"
+                                                x.message === "Recieved"
                                             ) {
 
                            window.location.href="/thank-you.php?num="+ payout

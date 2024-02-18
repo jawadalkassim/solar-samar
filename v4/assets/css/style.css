@@ -557,7 +557,7 @@ div#utility_provider {
     font-size: 16px;
     line-height: 1.428571429;
     color: #000;
-    background-color: hsla(180, 10%, 90%, 1);
+    background-color: hsl(180deg 21.67% 85.38%);
 }
 
 .v2-page .heading-survey {
