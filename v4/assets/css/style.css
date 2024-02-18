@@ -1226,8 +1226,8 @@ input.error {
     align-content: center;
     justify-content: center;
 }
-#tscert{
-    max-height: 100px;
+img#tscert {
+    max-height: 100px !important;
 }
 .logo img {
     width: 100px;
