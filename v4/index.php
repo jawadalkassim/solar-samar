@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Go Green And Save</title>
+    <title>Clever Solar Savings</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -315,7 +315,7 @@ window._loq =[]
                                     <div class="heading-survey">
                                         <div class="logo">
                                             <h1>
-                                                <img src="/assets/images/Logo3.png" alt="Go Green And Save" title="Go Green And Save">
+                                                <img src="/assets/images/clever-solar-saving.png" alt="Clever Solar Saving" title="Clever Solar Saving">
                                             </h1>
                                         </div>
                                     </div>
@@ -698,30 +698,30 @@ window._loq =[]
                     <p>Effective June 1st, 2024</p>
                     <p>Last Updated June 6th, 2024</p>
 
-                    <p>Welcome to gogreenandsave.net!</p>
+                    <p>Welcome to cleversolartechs.com!</p>
 
-                    <p>These terms and conditions outline the rules and regulations for the use of For the deal's Website, located at https://gogreenandsave.net/.</p>
+                    <p>These terms and conditions outline the rules and regulations for the use of For the deal's Website, located at https://cleversolartechs.com/.</p>
 
-                    <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use gogreenandsave.net if you do not agree to take all of the terms and conditions stated on this page.</p>
+                    <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use cleversolartechs.com if you do not agree to take all of the terms and conditions stated on this page.</p>
 
                     <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of us. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
 
                     <h3><strong>Cookies</strong></h3>
 
-                    <p>We employ the use of cookies. By accessing gogreenandsave.net, you agreed to use cookies in agreement with the For the Deal's <a href="privacy-policy.php" target="_new">Privacy Policy</a>. </p>
+                    <p>We employ the use of cookies. By accessing cleversolartechs.com, you agreed to use cookies in agreement with the For the Deal's <a href="privacy-policy.php" target="_new">Privacy Policy</a>. </p>
 
                     <p>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
                     <h3><strong>License</strong></h3>
 
-                    <p>Unless otherwise stated, For the Deal and/or its licensors own the intellectual property rights for all material on gogreenandsave.net. All intellectual property rights are reserved. You may access this from gogreenandsave.net for your own personal use subjected to restrictions set in these terms and conditions.</p>
+                    <p>Unless otherwise stated, For the Deal and/or its licensors own the intellectual property rights for all material on cleversolartechs.com. All intellectual property rights are reserved. You may access this from cleversolartechs.com for your own personal use subjected to restrictions set in these terms and conditions.</p>
 
                     <p>You must not:</p>
                     <ul>
-                        <li>Republish material from gogreenandsave.net</li>
-                        <li>Sell, rent or sub-license material from gogreenandsave.net</li>
-                        <li>Reproduce, duplicate or copy material from gogreenandsave.net</li>
-                        <li>Redistribute content from gogreenandsave.net</li>
+                        <li>Republish material from cleversolartechs.com</li>
+                        <li>Sell, rent or sub-license material from cleversolartechs.com</li>
+                        <li>Reproduce, duplicate or copy material from cleversolartechs.com</li>
+                        <li>Redistribute content from cleversolartechs.com</li>
                     </ul>
 
                     <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the <a href="https://www.termsandconditionsgenerator.com/">Free Terms and Conditions Generator</a>.</p>
@@ -828,11 +828,11 @@ window._loq =[]
                     <p>Last Updated June 6th, 2024</p>
                     <h1>Privacy Policy for For the Deal</h1>
 
-                    <p>At gogreenandsave.net, accessible from https://gogreenandsave.net/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by gogreenandsave.net and how we use it.</p>
+                    <p>At cleversolartechs.com, accessible from https://cleversolartechs.com/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by cleversolartechs.com and how we use it.</p>
 
                     <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
-                    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in gogreenandsave.net. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in cleversolartechs.com. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 
                     <h2>Consent</h2>
 
@@ -864,23 +864,23 @@ window._loq =[]
 
                     <h2>Log Files</h2>
 
-                    <p>gogreenandsave.net follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+                    <p>cleversolartechs.com follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
 
                     <h2>Cookies and Web Beacons</h2>
 
-                    <p>Like any other website, gogreenandsave.net uses "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+                    <p>Like any other website, cleversolartechs.com uses "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
 
                     <h2>Advertising Partners Privacy Policies</h2>
 
-                    <P>You may consult this list to find the Privacy Policy for each of the advertising partners of gogreenandsave.net.</p>
+                    <P>You may consult this list to find the Privacy Policy for each of the advertising partners of cleversolartechs.com.</p>
 
-                    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on gogreenandsave.net, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+                    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on cleversolartechs.com, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
 
-                    <p>Note that gogreenandsave.net has no access to or control over these cookies that are used by third-party advertisers.</p>
+                    <p>Note that cleversolartechs.com has no access to or control over these cookies that are used by third-party advertisers.</p>
 
                     <h2>Third Party Privacy Policies</h2>
 
-                    <p>gogreenandsave.net's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+                    <p>cleversolartechs.com's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
 
                     <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
 
@@ -899,7 +899,7 @@ window._loq =[]
 
                     <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
-                    <p>gogreenandsave.net does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+                    <p>cleversolartechs.com does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
                     <h2>Changes to This Privacy Policy</h2>
 
@@ -16677,7 +16677,7 @@ window._loq =[]
                                         const zip = $("#zip").val()
                                         //const ipadr = null
                                       //  console.log(ipadr);
-                                        const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&s1=224&s2=${s2}`;
+                                        const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&s1=224&s2=${s2}`;
                                         console.log('tf data')
                                         var payout = 0;
                                         console.log(data)
@@ -16732,12 +16732,12 @@ console.log(payout);
 //****
 //window.location.href="/thank-you.php?num="+ payout
 // ****
-postCall("https://hooks.zapier.com/hooks/catch/12345456/3qz4o6z/", data).then(x => x.json()).then(x => {
+postCall("https://pingpost.pro/receive-data", data).then(x => x.json()).then(x => {
                                             console.log(x);
                                             console.log(x.status);
 
                                             if (
-                                                x.status === "success"
+                                                x.status === "POST_VALID"
                                             ) {
 
                            window.location.href="/thank-you.php?num="+ payout
@@ -17055,37 +17055,6 @@ postCall("https://hooks.zapier.com/hooks/catch/12345456/3qz4o6z/", data).then(x 
             });
         });
     </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5GV70RRG0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-F5GV70RRG0');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5SLK4FV');
-    </script>
-    <!-- End Google Tag Manager -->
 
 
     <script type="text/javascript">
