@@ -124,7 +124,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <div class="logo">
                                             <h1>
-                                                <a href="https://www.solar-money-saver.com/v4/index.php" title="Smart Solar Savings">
+                                                <a href="https://www.cleversolartechs.com/v4/index.php" title="Smart Solar Savings">
                                                     <img src="/assets/images/Logo3.png" class="img-fluid" alt="Smart Solar Savings" title="Smart Solar Savings">
                                                 </a>
                                             </h1>
@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="solar-power-icon-content">
                                     <h3>Answer Your Phone!</h3>
-                                    <p>www.solar-savings-today.com does not make high-pressure sales calls - our main goal is to help you lower your electric bill. Your solar expert will connect you with multiple installers, so get ready.</p>
+                                    <p>www.cleversolartechs.com does not make high-pressure sales calls - our main goal is to help you lower your electric bill. Your solar expert will connect you with multiple installers, so get ready.</p>
                                 </div>
                             </div>
                         </div>
