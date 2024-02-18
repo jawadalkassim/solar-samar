@@ -1229,8 +1229,7 @@ input.error {
 
 .logo img {
     width: 100px;
-    margin-right: -40px;
-    max-height:150px;
+    max-height:90px;
 }
 
 @media (max-width: 1200px) {
