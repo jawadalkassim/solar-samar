@@ -42,7 +42,6 @@ fetch('https://ipinfo.io/json')
   .then(data => {
 
     ipadr = data.ip;
-   // console.log(ipadr);
 
   })
   .catch(error => console.error('Error fetching IP address:', error));
@@ -650,7 +649,7 @@ window._loq =[]
 
                                         <div class="col">
                                             <div class="form-btns ml-auto text-right btn-last-submit">
-                                                <button id="q11-next" class="btn form-btn btn-next btn-final" type="button"><span class="btn-text">Next</span>
+                                                <button id="q11-next" class="btn form-btn btn-next btn-final" type="button"><span class="btn-text">Submit</span>
                                                 </button>
                                                 <button id="q10-next-loading" class="btn form-btn btn-next-loading btn-final hide" type="button" disabled><span class="btn-text">Next</span>
                                                 </button>
@@ -681,7 +680,7 @@ window._loq =[]
                     <div class="footer-menu">
                         <div id="footer" class="form-group">
                             <p id="tcpa_label"> 
-                                Copyright&copy; 2024&nbsp;solar-savings-today.com&nbsp;All Rights Reserved &nbsp;<a href="privacy.php" target="_new">Privacy policy</a> || <a href="terms.php" target="_new">Terms and Conditions</a> || <a href="ccpa.php" target="_new">CCPA</a> || <a href="contact_us.php" target="_new">Contact Us</a>
+                                Copyright&copy; 2024&nbsp;cleversolartechs.com&nbsp;All Rights Reserved &nbsp;<a href="privacy.php" target="_new">Privacy policy</a> || <a href="terms.php" target="_new">Terms and Conditions</a> || <a href="ccpa.php" target="_new">CCPA</a> || <a href="contact_us.php" target="_new">Contact Us</a>
                             </p>
                             <style>
                                 footer {
