@@ -227,7 +227,7 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
     transform: rotate(270deg);
     position: absolute;
     top: 18px;
-    right: 28px
+    right: 10px
 }
 
 .btn-exclusive:hover, .btn-next:hover, .btn-next-loading:hover {
