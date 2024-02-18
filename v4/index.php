@@ -668,7 +668,7 @@ window._loq =[]
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 offset-lg-2">
                 <div>
-                    <img src="/assets/images/tscert.png" alt="TrustedSite" />
+                    <img id="tscert" src="/assets/images/tscert.png" alt="TrustedSite" />
                 </div>
             </div>
         </div>
