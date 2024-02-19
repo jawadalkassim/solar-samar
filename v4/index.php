@@ -68,7 +68,7 @@ window._loq =[]
         };
 
         
-        function initAutocomplete() {
+    function initAutocomplete() {
     // Create the autocomplete object, restricting the search predictions to addresses
     var autocomplete = new google.maps.places.Autocomplete(
         document.getElementById('address'),
@@ -89,7 +89,7 @@ window._loq =[]
         // Example: document.getElementById('zip').value = place.address_components[8].short_name;
     });
 }
-
+initAutocomplete();
         // function initAutocomplete() {
         //     if (!window.ADDRESS_VALIDATION_SKIP) {
         //         autocomplete = new google.maps.places.Autocomplete(
