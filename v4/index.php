@@ -26,7 +26,13 @@
 
   gtag('config', 'AW-');
 </script>
- 
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places"></script>
+
+<script>
+const autocom
+    </script>
+
     <script>
         var urlParams = new URLSearchParams(window.location.search);
         var s2 = urlParams.get('s2');
@@ -64,22 +70,22 @@ window._loq =[]
             postal_code: "short_name",
         };
 
-        // function initAutocomplete() {
-        //     if (!window.ADDRESS_VALIDATION_SKIP) {
-        //         autocomplete = new google.maps.places.Autocomplete(
-        //             document.getElementById("full_address"), {
-        //                 types: ["address"],
-        //                 componentRestrictions: {
-        //                     country: 'us'
-        //                 }
-        //             }
-        //         );
+        function initAutocomplete() {
+            if (!window.ADDRESS_VALIDATION_SKIP) {
+                autocomplete = new google.maps.places.Autocomplete(
+                    document.getElementById("address"), {
+                        types: ["address"],
+                        componentRestrictions: {
+                            country: 'us'
+                        }
+                    }
+                );
                
-        //         autocomplete.setFields(["address_component"]);
+                autocomplete.setFields(["address_component"]);
            
-        //         autocomplete.addListener("place_changed", fillInAddress);
-        //     }
-        // }
+                autocomplete.addListener("place_changed", fillInAddress);
+            }
+        }
 
         function phoneFormat(input) {
             input = input.replace(/\D/g, '');
@@ -97,27 +103,27 @@ window._loq =[]
             return input;
         }
 
-        // function fillInAddress() {
-        //     $("#street-address-verify").hide();
-        //     try {
-        //         const place = autocomplete.getPlace();
+        function fillInAddress() {
+            $("#street-address-verify").hide();
+            try {
+                const place = autocomplete.getPlace();
 
-        //         for (const component in componentForm) {
-        //             document.getElementById(component).value = "";
-        //         }
+                for (const component in componentForm) {
+                    document.getElementById(component).value = "";
+                }
 
-        //         for (const component of place.address_components) {
-        //             const addressType = component.types[0];
+                for (const component of place.address_components) {
+                    const addressType = component.types[0];
 
-        //             if (componentForm[addressType]) {
-        //                 const val = component[componentForm[addressType]];
-        //                 document.getElementById(addressType).value = val;
-        //             }
-        //         }
-        //     } catch (e) {
-        //     }
-        //     $(".btn-next, .quick-next").removeAttr('disabled');
-        // }
+                    if (componentForm[addressType]) {
+                        const val = component[componentForm[addressType]];
+                        document.getElementById(addressType).value = val;
+                    }
+                }
+            } catch (e) {
+            }
+            $(".btn-next, .quick-next").removeAttr('disabled');
+        }
 
         function getState(zipString) {
             if (typeof zipString !== 'string') {
