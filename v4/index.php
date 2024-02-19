@@ -16766,14 +16766,18 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
                                             if (
                                                 x.message === "Recieved"
                                             ) {
+setTimeout(() => {
+    window.location.href="/thank-you.php?"
 
-                           window.location.href="/thank-you.php?num="+ payout
+}, 2000);
                     
 
                                             } else {
                                                 
-                                                window.location.href="/thank-you.php?num="+ payout
-                                                    
+                                                setTimeout(() => {
+    window.location.href="/thank-you.php?"
+
+}, 2000);                                                    
                                                
                                             }
                                         })
