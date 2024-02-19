@@ -16759,7 +16759,10 @@ console.log(payout);
 //****
 //window.location.href="/thank-you.php?num="+ payout
 // ****
-postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
+postCall("https://pingpost.pro/leads/new", data,{
+            headers: {
+                "Content-Type" : "application/json"
+            }}).then(x => x.json()).then(x => {
                                             console.log(x);
                                             console.log(x.status);
 
