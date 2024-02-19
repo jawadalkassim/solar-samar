@@ -70,22 +70,45 @@ window._loq =[]
             postal_code: "short_name",
         };
 
+        
         function initAutocomplete() {
-            if (!window.ADDRESS_VALIDATION_SKIP) {
-                autocomplete = new google.maps.places.Autocomplete(
-                    document.getElementById("address"), {
-                        types: ["address"],
-                        componentRestrictions: {
-                            country: 'us'
-                        }
-                    }
-                );
-               
-                autocomplete.setFields(["address_component"]);
-           
-                autocomplete.addListener("place_changed", fillInAddress);
-            }
+    // Create the autocomplete object, restricting the search predictions to addresses
+    var autocomplete = new google.maps.places.Autocomplete(
+        document.getElementById('address'),
+        { types: ['address'] }
+    );
+
+    // When the user selects an address from the dropdown, populate the address fields in the form
+    autocomplete.addListener('place_changed', function() {
+        var place = autocomplete.getPlace();
+        if (!place.geometry) {
+            console.log("Place details not found for input: ", place.name);
+            return;
         }
+
+        // Populate other fields if needed
+        // Example: document.getElementById('city').value = place.address_components[4].long_name;
+        // Example: document.getElementById('state').value = place.address_components[6].short_name;
+        // Example: document.getElementById('zip').value = place.address_components[8].short_name;
+    });
+}
+
+        // function initAutocomplete() {
+        //     if (!window.ADDRESS_VALIDATION_SKIP) {
+        //         autocomplete = new google.maps.places.Autocomplete(
+        //             document.getElementById("full_address"), {
+        //                 types: ["address"],
+        //                 componentRestrictions: {
+        //                     country: 'us'
+        //                 }
+        //             }
+        //         );
+               
+        //         autocomplete.setFields(["address_component"]);
+           
+        //         autocomplete.addListener("place_changed", fillInAddress);
+        //     }
+        // }
 
         function phoneFormat(input) {
             input = input.replace(/\D/g, '');
@@ -103,27 +126,27 @@ window._loq =[]
             return input;
         }
 
-        function fillInAddress() {
-            $("#street-address-verify").hide();
-            try {
-                const place = autocomplete.getPlace();
+        // function fillInAddress() {
+        //     $("#street-address-verify").hide();
+        //     try {
+        //         const place = autocomplete.getPlace();
 
-                for (const component in componentForm) {
-                    document.getElementById(component).value = "";
-                }
+        //         for (const component in componentForm) {
+        //             document.getElementById(component).value = "";
+        //         }
 
-                for (const component of place.address_components) {
-                    const addressType = component.types[0];
+        //         for (const component of place.address_components) {
+        //             const addressType = component.types[0];
 
-                    if (componentForm[addressType]) {
-                        const val = component[componentForm[addressType]];
-                        document.getElementById(addressType).value = val;
-                    }
-                }
-            } catch (e) {
-            }
-            $(".btn-next, .quick-next").removeAttr('disabled');
-        }
+        //             if (componentForm[addressType]) {
+        //                 const val = component[componentForm[addressType]];
+        //                 document.getElementById(addressType).value = val;
+        //             }
+        //         }
+        //     } catch (e) {
+        //     }
+        //     $(".btn-next, .quick-next").removeAttr('disabled');
+        // }
 
         function getState(zipString) {
             if (typeof zipString !== 'string') {
