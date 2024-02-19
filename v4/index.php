@@ -27,7 +27,7 @@
   gtag('config', 'AW-');
 </script>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places" async></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places&callback=initAutocomplete" async defer></script>
 
 
     <script>
