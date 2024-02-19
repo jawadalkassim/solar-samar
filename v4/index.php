@@ -16684,27 +16684,27 @@ window._loq =[]
                                         const zip = $("#zip").val()
                                         //const ipadr = null
                                       //  console.log(ipadr);
-                                      const data = {
-  campid: "campid",
-  property_ownership: property_ownership,
-  electric_bill: electric_bill,
-  roof_shade: roof_shade,
-  first_name: first_name,
-  last_name: last_name,
-  phone_home: phone_home,
-  street: address,
-  email: email,
-  city: city,
-  state: state,
-  zip: zip,
-  solar_electric: true,
-  ip_address: ipadr,
-  xxTrustedFormCertUrl: document.querySelector("#xxTrustedFormCertUrl_0").value,
-  s1: "224",
-  s2: s2
-};
+//                                       const data = {
+//   campid: "campid",
+//   property_ownership: property_ownership,
+//   electric_bill: electric_bill,
+//   roof_shade: roof_shade,
+//   first_name: first_name,
+//   last_name: last_name,
+//   phone_home: phone_home,
+//   street: address,
+//   email: email,
+//   city: city,
+//   state: state,
+//   zip: zip,
+//   solar_electric: true,
+//   ip_address: ipadr,
+//   xxTrustedFormCertUrl: document.querySelector("#xxTrustedFormCertUrl_0").value,
+//   s1: "224",
+//   s2: s2
+// };
 
-                                    //    const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&s1=224&s2=${s2}`;
+                                      const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&s1=224&s2=${s2}`;
                                         console.log('tf data')
                                         var payout = 0;
                                         console.log(data)
@@ -16759,10 +16759,7 @@ console.log(payout);
 //****
 //window.location.href="/thank-you.php?num="+ payout
 // ****
-postCall("https://pingpost.pro/leads/new", data,{
-            headers: {
-                "Content-Type" : "application/json"
-            }}).then(x => x.json()).then(x => {
+postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
                                             console.log(x);
                                             console.log(x.status);
 
