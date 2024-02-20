@@ -16805,14 +16805,14 @@ setTimeout(() => {
 }, 2000);                                                    
                                                
                                             }
-                                        }.catch{
+                                        }).catch{
 
                                                   
-                                            setTimeout(() => {
-    window.location.href="/thank-you.php?"
+setTimeout(() => {
+window.location.href="/thank-you.php?"
 
 }, 2000);                               
-                                        })
+}
 
                                  
                             }
