@@ -30,19 +30,6 @@
 
 
 
-<!-- TrustedForm -->
-<script type="text/javascript">
-(function() {
-var tf = document.createElement('script');
-tf.type = 'text/javascript'; tf.async = true;
-tf.src = ("https:" == document.location.protocol ? 'https' : 'http') + "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" + new Date().getTime() + Math.random();
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
-})();
-</script>
-<noscript>
-<img src="https://api.trustedform.com/ns.gif" />
-</noscript>
-<!-- End TrustedForm -->
 
 <script>
 var ipadr;
@@ -441,8 +428,8 @@ initAutocomplete();
                                 <input type="hidden" id="session_storage" name="session_storage" value="">
                                 <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" value="">
                                 <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl" value="">
-                                <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl_0" value="https://cert.trustedform.com/454a35b802f3e7b63ffabb4efedb7c6ebe67886c">
-                                <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl_0" value="https://ping.trustedform.com/0.HJDqajg8vVF20hwiDBJ92kct5idepgBM4vHylmh43kShfWSZKwm8HI37KqPToi0y3dhTIQ3N.uOjUbzs7aKNUWivkGh7I9Q.50hgmcLFsDabNx1wtZZPdQ">
+                                <!-- <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl_0" value="https://cert.trustedform.com/454a35b802f3e7b63ffabb4efedb7c6ebe67886c">
+                                <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl_0" value="https://ping.trustedform.com/0.HJDqajg8vVF20hwiDBJ92kct5idepgBM4vHylmh43kShfWSZKwm8HI37KqPToi0y3dhTIQ3N.uOjUbzs7aKNUWivkGh7I9Q.50hgmcLFsDabNx1wtZZPdQ"> -->
                                 <fieldset id="form-step1" class="form-steps fieldset-0" data-step="1" style="display: block;" data-tag="homeowner">
                                     <legend hidden="true">homeowner</legend>
                                     <h3 class="form_box-question">Are you a homeowner?</h3>
@@ -17128,7 +17115,7 @@ window.location.href="/thank-you.php?"
     </script>
 
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function() {
             var field = "xxTrustedFormCertUrl";
             var provideReferrer = false;
@@ -17149,7 +17136,23 @@ window.location.href="/thank-you.php?"
             ``
             s.parentNode.insertBefore(tf, s);
         })();
-    </script>
+    </script> -->
+<!-- TrustedForm -->
+<script type="text/javascript">
+(function() {
+var tf = document.createElement('script');
+tf.type = 'text/javascript'; tf.async = true;
+tf.src = ("https:" == document.location.protocol ? 'https' : 'http') + "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" + new Date().getTime() + Math.random();
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+})();
+</script>
+<noscript>
+<img src="https://api.trustedform.com/ns.gif" />
+</noscript>
+<!-- End TrustedForm -->
+
+
+
     <script>
         const postCall = async (url, data) => {
             return await fetch(url, {
