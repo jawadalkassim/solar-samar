@@ -341,7 +341,7 @@ window._loq =[]
                                     <div class="heading-survey">
                                         <div class="logo">
                                             <h1>
-                                                <img src="/assets/images/clever-solar-saving.png" alt="Clever Solar Saving" title="Clever Solar Saving">
+                                                <img src="/assets/images/Clever-Solar-Savings.png" alt="Clever Solar Saving" title="Clever Solar Saving">
                                             </h1>
                                         </div>
                                     </div>
