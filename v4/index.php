@@ -37,6 +37,8 @@
     
     </script>
 
+
+
 <!-- TrustedForm -->
 <script type="text/javascript">
 (function() {
@@ -50,6 +52,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf
 <img src="https://api.trustedform.com/ns.gif" />
 </noscript>
 <!-- End TrustedForm -->
+
 <script>
 var ipadr;
 
@@ -445,9 +448,8 @@ initAutocomplete();
                                 <input type="hidden" id="clickid" name="clickid" value="{clickid}">
                                 <input type="hidden" id="local_storage" name="local_storage" value="">
                                 <input type="hidden" id="session_storage" name="session_storage" value="">
-
                                 <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" value="">
-                                <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl" value="">
+    <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl" value="">
                                 <!-- <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl_0" value="https://cert.trustedform.com/454a35b802f3e7b63ffabb4efedb7c6ebe67886c">
                                 <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl_0" value="https://ping.trustedform.com/0.HJDqajg8vVF20hwiDBJ92kct5idepgBM4vHylmh43kShfWSZKwm8HI37KqPToi0y3dhTIQ3N.uOjUbzs7aKNUWivkGh7I9Q.50hgmcLFsDabNx1wtZZPdQ"> -->
                                 <fieldset id="form-step1" class="form-steps fieldset-0" data-step="1" style="display: block;" data-tag="homeowner">
@@ -16746,7 +16748,7 @@ initAutocomplete();
 //   s2: s2
 // };
 
-                                      const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=`${subid}`&transaction_id=${transaction_id}`;
+                                      const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subi}&transaction_id=${transaction_id};
                                         console.log('tf data')
                                         var payout = 0;
                                         console.log(data)
