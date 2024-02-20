@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
- <!-- Google tag (gtag.js) -->
+ <!-- Google tag (gtag.js)
  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -25,7 +25,7 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-');
-</script>
+</script> -->
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places&callback=initAutocomplete" async defer></script>
 
@@ -16406,12 +16406,12 @@ initAutocomplete();
                 toggleSubmitButtons(true);
             }
 
-            dataLayer.push({
-                'nonce': '1131593b4af57bc8bbb90be0b76d652d'
-            });
-            dataLayer.push({
-                'event': 'Q1'
-            });
+            // dataLayer.push({
+            //     'nonce': '1131593b4af57bc8bbb90be0b76d652d'
+            // });
+            // dataLayer.push({
+            //     'event': 'Q1'
+            // });
         
             const first_name = $("#first");
             const last_name = $("#last");
@@ -16794,7 +16794,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
 setTimeout(() => {
     window.location.href="/thank-you.php?"
 
-}, 2000);
+}, 1000);
                     
 
                                             } else {
@@ -16802,14 +16802,14 @@ setTimeout(() => {
                                                 setTimeout(() => {
     window.location.href="/thank-you.php?"
 
-}, 2000);                                                    
+}, 1000);                                                    
                                                
                                             }
                                         }).catch(x => {                                              
 setTimeout(() => {
 window.location.href="/thank-you.php?"
 
-}, 2000);                               
+}, 1000);                               
 })
 
                                  
@@ -16835,21 +16835,21 @@ window.location.href="/thank-you.php?"
                         $("#loader").show();
                         $('#form_box').hide();
                         window.top.scrollTo(0, 0);
-                        dataLayer.push({
-                            'event': 'Submit'
-                        });
+                        // dataLayer.push({
+                        //     'event': 'Submit'
+                        // });
                         window._loq.push(["tag", 'Submit', true]);
-                        gtag('event', 'page_view', {
-                            page_title: "Submit (Loader)",
-                            page_location: '/' + version + '/Submit',
-                            page_path: '/' + version + '/Submit',
-                            send_to: window.measurement_id
-                        });
-                        gtag('event', 'survey_step', {
-                            event_category: 'survey',
-                            event_label: 'Submit',
-                            label: 'Submit'
-                        });
+                        // gtag('event', 'page_view', {
+                        //     page_title: "Submit (Loader)",
+                        //     page_location: '/' + version + '/Submit',
+                        //     page_path: '/' + version + '/Submit',
+                        //     send_to: window.measurement_id
+                        // });
+                        // gtag('event', 'survey_step', {
+                        //     event_category: 'survey',
+                        //     event_label: 'Submit',
+                        //     label: 'Submit'
+                        // });
                         $("input, select").removeAttr('disabled', 'disabled');
                         try {
                             grecaptcha.ready(function() {
