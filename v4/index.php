@@ -17,15 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
- <!-- Google tag (gtag.js)
- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-');
-</script> -->
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places&callback=initAutocomplete" async defer></script>
 
@@ -448,6 +439,8 @@ initAutocomplete();
                                 <input type="hidden" id="clickid" name="clickid" value="{clickid}">
                                 <input type="hidden" id="local_storage" name="local_storage" value="">
                                 <input type="hidden" id="session_storage" name="session_storage" value="">
+                                <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" value="">
+                                <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl" value="">
                                 <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl_0" value="https://cert.trustedform.com/454a35b802f3e7b63ffabb4efedb7c6ebe67886c">
                                 <input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl_0" value="https://ping.trustedform.com/0.HJDqajg8vVF20hwiDBJ92kct5idepgBM4vHylmh43kShfWSZKwm8HI37KqPToi0y3dhTIQ3N.uOjUbzs7aKNUWivkGh7I9Q.50hgmcLFsDabNx1wtZZPdQ">
                                 <fieldset id="form-step1" class="form-steps fieldset-0" data-step="1" style="display: block;" data-tag="homeowner">
