@@ -453,7 +453,6 @@ window._loq =[]
                                 <fieldset id="form-step2" class="form-steps fieldset-1" data-step="2" style="display: none;" data-tag="zip">
                                     <legend hidden="true">zipcode</legend>
                                     <h3 class="form_box-question">What is your zip code?</h3>
-                                    <h5 class="form_box-question">Please make sure to type 5-digits number</h5>
 
                                     <div class="form-group">
                                         <label style="visibility: hidden; position: absolute;" for="zip">Zip Code</label>
