@@ -601,7 +601,7 @@ window._loq =[]
                                     <legend hidden="true">City</legend>
                                     <h3 class="form_box-question">Which city do you live in?</h3>
                                     <div class="form-group" id="street_address">
-                                        <input id="city" class="form-control" type="text" name="city" placeholder="Ciudad" value="" required>
+                                        <input id="city" class="form-control" type="text" name="city" placeholder="City" value="" required>
                                         <div id="address_error" class="form-error-message">Please, type where would you like your solar panels to be installed.</div>
                                     </div>
                                     <div class="form-group" id="street-address-verify" style="display: none;">
