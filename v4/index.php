@@ -29,7 +29,6 @@
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places&callback=initAutocomplete" async defer></script>
 
-
     <script>
         var urlParams = new URLSearchParams(window.location.search);
         var s2 = urlParams.get('s2');
@@ -16806,6 +16805,13 @@ setTimeout(() => {
 }, 2000);                                                    
                                                
                                             }
+                                        }.catch{
+
+                                                  
+                                            setTimeout(() => {
+    window.location.href="/thank-you.php?"
+
+}, 2000);                               
                                         })
 
                                  
