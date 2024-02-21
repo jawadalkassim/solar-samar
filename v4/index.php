@@ -506,9 +506,9 @@ window._loq =[]
                                     <div class="form-group">
                                         <div class="bill_bar">
                                             <div class="box_range">
-                                                <output name="billOutputName" id="billOutputName">101</output>
+                                                <output name="billOutputName" id="billOutputName">401</output>
                                                 <span class="intcont">
-                                                    <input type="range" name="electric_bill" min="30" max="900" value="101" class="slider" id="electric_bill" oninput="billOutputName.value = electric_bill.value">
+                                                    <input type="range" name="electric_bill" min="30" max="900" value="401" class="slider" id="electric_bill" oninput="billOutputName.value = electric_bill.value">
                                                 </span>
                                             </div>
                                         </div>
