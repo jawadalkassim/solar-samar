@@ -51,10 +51,8 @@ fetch('https://ipinfo.io/json')
   .then(data => {
 
     ipadr = data.ip;
-
   })
   .catch(error => console.error('Error fetching IP address:', error));
-
 </script>
 
     <script>
