@@ -415,7 +415,7 @@ window._loq =[]
                             </div>
                             <form id="msform" class="form" action="thank-you.php?" novalidate method="post">
                                 <input type="hidden" id="token" name="token" value="9741a0c84c1112244e3cce9df3fb31a17217692194c4cd5ffef12c033d5eb9f6">
-                                <input id="leadid_token" name="jornaya_lead_id" type="hidden" value="" />
+                                <!-- <input id="leadid_token" name="jornaya_lead_id" type="hidden" value="" /> -->
                                 <input type="hidden" id="tcpa_text" name="tcpa_text" value="By clicking Next, I agree to Terms, Privacy, and consent to solar/home servicers to send marketing prerecorded messages and autodialed calls/texts to my phone number above even if it's on any do not call list. Consent is not a condition of purchase. You can opt-out at any time (see Terms). Message/data rates may apply.">
                                 <input type="hidden" id="tcpa_consent" name="tcpa_consent" value="Yes">
                                 <input type="hidden" id="interested_in_solar_electric" name="interested_in_solar_electric" value="yes">
@@ -16710,6 +16710,7 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
                                         const city = $('#city').val()
                                         const state = $('#state').val()
                                         const zip = $("#zip").val()
+                                        const lead_id_code = $("leadid_token").val()
                                         const provider = $("#provider-select").val()
                                         //const ipadr = null
                                       //  console.log(ipadr);
@@ -16733,7 +16734,7 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
 //   s2: s2
 // };
 
-                                      const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&provider=${provider}&agent=${window.navigator.userAgent}`
+                                      const data = `campid=campid&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&provider=${provider}&agent=${window.navigator.userAgent}&lead_id_code=${lead_id_code}`
                                         console.log('tf data')
                                         var payout = 0;
                                         console.log(data)
@@ -17145,7 +17146,18 @@ window.location.href="/thank-you.php?"
         })();
     </script> -->
 <!-- TrustedForm -->
-
+<script id="LeadiDscript" type="text/javascript">
+(function() {
+var s = document.createElement('script');
+s.id = 'LeadiDscript_campaign';
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//create.lidstatic.com/campaign/da4f95aa-f083-ef71-3e7b-e2ad17d60006.js?snippet_version=2';
+var LeadiDscript = document.getElementById('LeadiDscript');
+LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+})();
+</script>
+<noscript><img src='//create.leadid.com/noscript.gif?lac=95D8E963-466E-8BEC-A6C5-E0410876431F&lck=da4f95aa-f083-ef71-3e7b-e2ad17d60006&snippet_version=2' /></noscript>
 
 <script type="text/javascript">
 (function() {
