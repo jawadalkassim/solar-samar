@@ -1,5 +1,4 @@
-<div class="ne elHeadline hsSize3 lh3 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: center;" data-bold="inherit" contenteditable="false">1st Class Energy
-
+<div class="ne elHeadline hsSize3 lh3 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: center;" data-bold="inherit" contenteditable="false">
 <div>Adopt A Contractor
     </div>
 
@@ -26,6 +25,8 @@
 <div>Synergy Energy Solutions
     </div>    
 <div>3 Four 5 Group Inc
+    </div>
+    <div>1st Class Energy
     </div>
     <div>3 Guys Solar
     </div>
