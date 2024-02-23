@@ -124,7 +124,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <div class="logo">
                                             <h1>
-                                                <a href="https://www.cleversolartechs.com/v4/index.php" title="Smart Solar Savings">
+                                                <a href="https://www.cleversolartechs.com" title="Smart Solar Savings">
                                                     <img src="/assets/images/Clever-Solar-Savings.png" class="img-fluid" alt="Smart Solar Savings" title="Smart Solar Savings">
                                                 </a>
                                             </h1>
