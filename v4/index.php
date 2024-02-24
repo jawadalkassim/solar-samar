@@ -16735,7 +16735,7 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
 //   s2: s2
 // };
 
-                                      const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&provider=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+                                      const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
                                         console.log('tf data')
                                         var payout = 0;
                                         console.log(data)
@@ -16800,7 +16800,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
 setTimeout(() => {
     window.location.href="/thank-you.php?"
 
-}, 1000);
+}, 5000);
                     
 
                                             } else {
