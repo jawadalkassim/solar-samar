@@ -419,7 +419,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <input type="hidden" id="token" name="token" value="9741a0c84c1112244e3cce9df3fb31a17217692194c4cd5ffef12c033d5eb9f6">
                                 <input id="leadid_token" name="universal_leadid" type="hidden" value=""/>
 
-                                <input type="hidden" id="tcpa_text" name="tcpa_text" value="By clicking Submit, I agree to Terms, Privacy, and consent to solar/home servicers to send marketing prerecorded messages and autodialed calls/texts to my phone number above even if it's on any do not call list. Consent is not a condition of purchase. You can opt-out at any time (see Terms). Message/data rates may apply.">
+                                <input type="hidden" id="tcpa_text" name="tcpa_text" value="We respect your privacy and want to make you aware of a few things. By pressing “Submit”, you authorize Clever Solar Techs and up to four solar companies, subject to our Privacy Policiy and our Terms and Conditions to call you or SMS message the phone number provided, even if it is currently listed on any state, federal, or corporate 'Do Not Call' lists, and you understand that they may use automated dialing or prerecorded message to call you, and that your consent is not required to purchase products or services.">
                                 <input type="hidden" id="tcpa_consent" name="tcpa_consent" value="Yes">
                                 <input type="hidden" id="interested_in_solar_electric" name="interested_in_solar_electric" value="yes">
                                 <input type="hidden" id="interested_in_solar_hot_water" name="interested_in_solar_hot_water" value="no">
