@@ -93,10 +93,36 @@
                 }
                 console.log(place.address_components)
                 // Populate other fields if needed
-                document.getElementById('city').value = place.address_components[2].long_name;
-                document.getElementById('state').value = place.address_components[4].long_name;
-                document.getElementById('short-state').value = place.address_components[4].short_name;
-                document.getElementById('zip').value = place.address_components[6].short_name;
+               // document.getElementById('city').value = place.address_components[2].long_name;
+                //document.getElementById('state').value = place.address_components[4].long_name;
+                //document.getElementById('short-state').value = place.address_components[4].short_name;
+                //document.getElementById('zip').value = place.address_components[6].short_name;
+
+                place.address_components.forEach(component => {
+    if (component.types.includes('locality')) {
+        document.getElementById('city').value = component.short_name;
+    }
+});
+
+
+                place.address_components.forEach(component => {
+    if (component.types.includes('administrative_area_level_1')) {
+        document.getElementById('short-state').value = component.short_name;
+    }
+});
+                place.address_components.forEach(component => {
+    if (component.types.includes('administrative_area_level_1')) {
+        document.getElementById('state').value = component.long_name;
+    }
+});
+
+                place.address_components.forEach(component => {
+    if (component.types.includes('postal_code')) {
+        document.getElementById('zip').value = component.short_name;
+    }
+});
+
+
             });
         }
 
