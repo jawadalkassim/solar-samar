@@ -16693,11 +16693,7 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
                         const measureSubmissionDuration = MeasureDuration('submission');
                   
                         [
-                            () => {
-                                animateFormSubmission(() => {
-                                    
-                                });
-                            },
+                       
                             () => {
                                 
                                   
@@ -16821,6 +16817,11 @@ window.location.href="/thank-you.php?"
 })
 
                                  
+                            },
+                            () => {
+                                animateFormSubmission(() => {
+                                    
+                                });
                             }
                         ].forEach(task => {
                             task();

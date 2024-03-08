@@ -17258,11 +17258,7 @@
                     const measureSubmissionDuration = MeasureDuration('submission');
 
                     [
-                        () => {
-                            animateFormSubmission(() => {
-
-                            });
-                        },
+                       
                         () => {
 
 
@@ -17286,7 +17282,55 @@
                             console.log('tf data')
                             console.log(data)
               
-                           
+
+// var GHLData = {
+//   firstName: first_name,
+//   lastName: last_name,
+//   email: email,
+//   phone: phone_home,
+//   address1: street,
+//   city: city,
+//   state: state,
+//   postalCode: zip,
+//   tags: ['solar','not submitted'],
+//   customField: {
+//     "ygJrtzj4XoDNcy5niXmZ": transaction_id,
+//     "xOvXeJ1Qu504JlUyTX31": subid,
+//     "68FhdBJOovz8Nhqxuij9": ip_address,
+//     "x3sUxnswifmfUCLNF8hE": solar_electric,
+//     "jLtwAkky4jo5Xcsa3yiB": xxTrustedFormCertUrl,
+//     "oWU1riDkzcYpx7FRCPAL": roof_shade,
+//     "GGGIzqwefOcEuAdZaLHU": electric_bill,
+//     "FSsGkszgZl2uEChKTyTO": property_ownership,
+//     "6wP5dJdsfDQMD767y5iR": universal_d,
+//     "SxkXrnTy2xx9qmFf8Rtt": electricUtilityProviderText,
+//     "KalxAM28yixcdtMEl530": agent
+
+//   },
+// };
+
+
+// const DirectSendToGHL = async (lead) =>{
+
+//   try {
+//       axios.post('https://rest.gohighlevel.com/v1/contacts/', lead, {
+//           headers: {
+//               Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6IjJPb09jdnRDSGNqemE2SXBiMDI1IiwiY29tcGFueV9pZCI6ImdKYlhhdmpGVTlhZmtaTnpWeVdCIiwidmVyc2lvbiI6MSwiaWF0IjoxNzA4Mjk0NzAyNTc4LCJzdWIiOiJ1c2VyX2lkIn0.QhpGRTavJbNmvu-j0bg4AKxaMCdTHvgI1mjhH5icois"
+//           }
+//           })
+//         .then(function (response) {
+//           console.log("Contact Created");
+//         })
+//         .catch(function (error) {
+//           console.log(error);
+//         });
+//   } catch(error) {
+  
+//     return { error: true, message: error.message };
+//   }
+
+// }
+
                             //window.location.href="/thank-you.php?num="+ payout
                             // **** https://pingpost.pro/leads/new"
                             postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
@@ -17303,7 +17347,13 @@
 
 
                                 } else {
+                                    // try{
+                                    //     DirectSendToGHL(GHLData);
 
+                                    // }catch{
+                                    //     console.log("GHL Error")
+                                    // }
+                                    
                                     setTimeout(() => {
                                    window.location.href = "/thank-you.php?"
 
@@ -17318,6 +17368,11 @@
                             })
 
 
+                        },
+                        () => {
+                            animateFormSubmission(() => {
+
+                            });
                         }
                     ].forEach(task => {
                         task();
