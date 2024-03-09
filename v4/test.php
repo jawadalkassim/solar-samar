@@ -17333,7 +17333,7 @@
 
                             //window.location.href="/thank-you.php?num="+ payout
                             // **** https://pingpost.pro/leads/new"
-                            postCall("https://pingpost.pro/leads/momemtum", data).then(x => x.json()).then(x => {
+                            postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => {
                                 console.log(x);
                                 console.log(x.status);
 
