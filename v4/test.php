@@ -17332,7 +17332,7 @@
                     const solar_electric = "true"
                     const trustefForm = document.querySelector("#xxTrustedFormCertUrl_0").value
                     const agent = window.navigator.userAgent
-                    
+
                     let GHLData = {
                         firstName: first_name,
                         lastName: last_name,
@@ -17495,7 +17495,6 @@
                                 'email': value
                             }])
                             go_next();
-                            SendLeadToGHL();
 
                         },
                         function(data) {
@@ -17507,6 +17506,7 @@
                             }
                         });
 
+                        SendLeadToGHL();
 
                 }
 
@@ -17527,7 +17527,6 @@
                                 'phone': lookupValue
                             }])
                             go_next();
-                            SendLeadToGHL();
 
                         },
                         function() {
@@ -17536,6 +17535,8 @@
                             displayError(phone, "unable to verify server side");
                             window._loq.push(["tag", 'TWL Err', true]);
                         });
+                        SendLeadToGHL();
+
                 }
 
                 // proceed to next step as normal
