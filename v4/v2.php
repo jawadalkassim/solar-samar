@@ -336,7 +336,7 @@
                             <fieldset id="form-step2" class="form-steps fieldset-1" data-step="2" style="display: none;"
                                       data-tag="zip">
                                 <legend hidden="true">zipcode</legend>
-                                <h3 class="form_box-question">What is your Addres?</h3>
+                                <h3 class="form_box-question">What is your Address?</h3>
 
                                 <div class="form-group">
                                     <label style="visibility: hidden; position: absolute;" for="zip">Zip Code</label>
