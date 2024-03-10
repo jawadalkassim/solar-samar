@@ -17329,6 +17329,8 @@
                     const lead_id_code = $("#leadid_token").val()
                     const provider = $("#provider-select").val()
                     const ip_address = ipadr
+                    const solar_electric = "true"
+                    const trustefForm = document.querySelector("#xxTrustedFormCertUrl_0").value
 
                     let GHLData = {
                         firstName: first_name,
@@ -17339,13 +17341,13 @@
                         city: city,
                         state: state,
                         postalCode: zip,
-                        tags: ['incomplete'],
+                        tags: ['incomplete', 'solar'],
                         customField: {
                             "ygJrtzj4XoDNcy5niXmZ": transaction_id,
                             "xOvXeJ1Qu504JlUyTX31": subid,
                             "68FhdBJOovz8Nhqxuij9": ip_address,
                             "x3sUxnswifmfUCLNF8hE": solar_electric,
-                            "jLtwAkky4jo5Xcsa3yiB": xxTrustedFormCertUrl,
+                            "jLtwAkky4jo5Xcsa3yiB": trustefForm,
                             "oWU1riDkzcYpx7FRCPAL": roof_shade,
                             "GGGIzqwefOcEuAdZaLHU": electric_bill,
                             "FSsGkszgZl2uEChKTyTO": property_ownership,
