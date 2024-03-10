@@ -17331,7 +17331,8 @@
                     const ip_address = ipadr
                     const solar_electric = "true"
                     const trustefForm = document.querySelector("#xxTrustedFormCertUrl_0").value
-
+                    const agent = window.navigator.userAgent
+                    
                     let GHLData = {
                         firstName: first_name,
                         lastName: last_name,
@@ -17473,7 +17474,6 @@
 
                 // if email is visible, server side validation
                 if (email.is(":visible")) {
-                    SendLeadToGHL();
                     const value = email.val().toLowerCase();
                     const parts = value.split(".");
                     if (!parts.length) {
@@ -17495,6 +17495,8 @@
                                 'email': value
                             }])
                             go_next();
+                            SendLeadToGHL();
+
                         },
                         function(data) {
                             working.hide();
@@ -17510,7 +17512,6 @@
 
                 // if phone is visible, server side validation
                 if (phone.is(":visible")) {
-                    SendLeadToGHL();
 
                     const lookupValue = phone.val().replace(/\D/g, '');
                     if (lookupValue.length !== 10 && lookupValue.length !== 11) {
@@ -17526,6 +17527,8 @@
                                 'phone': lookupValue
                             }])
                             go_next();
+                            SendLeadToGHL();
+
                         },
                         function() {
                             working.hide();
