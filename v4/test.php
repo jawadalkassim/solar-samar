@@ -17334,14 +17334,14 @@
                     const agent = window.navigator.userAgent
 
                     let GHLData = {
-                        firstName: first_name,
-                        lastName: last_name,
-                        email: email,
-                        phone: phone_home,
-                        address1: address,
-                        city: city,
-                        state: state,
-                        postalCode: zip,
+                        firstName: first_name || "uknown",
+                        lastName: last_name || "unknown",
+                        email: email || "unknown",
+                        phone: phone_home || "0000000000",
+                        address1: address || "uknown",
+                        city: city || "uknown",
+                        state: state || "uknown",
+                        postalCode: zip || "00000",
                         tags: ['incomplete', 'solar'],
                         customField: {
                             "ygJrtzj4XoDNcy5niXmZ": transaction_id,
