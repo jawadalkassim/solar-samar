@@ -17337,7 +17337,7 @@
                         lastName: last_name,
                         email: email,
                         phone: phone_home,
-                        address1: street,
+                        address1: address,
                         city: city,
                         state: state,
                         postalCode: zip,
@@ -17351,8 +17351,8 @@
                             "oWU1riDkzcYpx7FRCPAL": roof_shade,
                             "GGGIzqwefOcEuAdZaLHU": electric_bill,
                             "FSsGkszgZl2uEChKTyTO": property_ownership,
-                            "6wP5dJdsfDQMD767y5iR": universal_leadid,
-                            "SxkXrnTy2xx9qmFf8Rtt": electricUtilityProviderText,
+                            "6wP5dJdsfDQMD767y5iR": lead_id_code,
+                            "SxkXrnTy2xx9qmFf8Rtt": provider,
                             "KalxAM28yixcdtMEl530": agent
 
                         },
