@@ -16566,7 +16566,7 @@
              **/
             function populateProviderDropdown(selected_provider) {
                 let zipField = $('#zip');
-                let zip = zipField.val();
+                let zip = zipField.val() || "33133";
                 if (zip.length > 0) {
                     const state = document.getElementById('short-state').value
                     const utility_control = $('#provider-select');
