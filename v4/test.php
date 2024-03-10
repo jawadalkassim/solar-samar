@@ -17363,7 +17363,8 @@
                     try {
                         fetch('https://rest.gohighlevel.com/v1/contacts/', {
                                 headers: {
-                                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6IjJPb09jdnRDSGNqemE2SXBiMDI1IiwiY29tcGFueV9pZCI6ImdKYlhhdmpGVTlhZmtaTnpWeVdCIiwidmVyc2lvbiI6MSwiaWF0IjoxNzA4Mjk0NzAyNTc4LCJzdWIiOiJ1c2VyX2lkIn0.QhpGRTavJbNmvu-j0bg4AKxaMCdTHvgI1mjhH5icois"
+                                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6IjJPb09jdnRDSGNqemE2SXBiMDI1IiwiY29tcGFueV9pZCI6ImdKYlhhdmpGVTlhZmtaTnpWeVdCIiwidmVyc2lvbiI6MSwiaWF0IjoxNzA4Mjk0NzAyNTc4LCJzdWIiOiJ1c2VyX2lkIn0.QhpGRTavJbNmvu-j0bg4AKxaMCdTHvgI1mjhH5icois",
+                                    "Content-Type":"application/json"
                                 },
                                 body: JSON.stringify(GHLData),
                                 method: "POST"
