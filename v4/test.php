@@ -17365,7 +17365,7 @@
                                 headers: {
                                     Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6IjJPb09jdnRDSGNqemE2SXBiMDI1IiwiY29tcGFueV9pZCI6ImdKYlhhdmpGVTlhZmtaTnpWeVdCIiwidmVyc2lvbiI6MSwiaWF0IjoxNzA4Mjk0NzAyNTc4LCJzdWIiOiJ1c2VyX2lkIn0.QhpGRTavJbNmvu-j0bg4AKxaMCdTHvgI1mjhH5icois"
                                 },
-                                body: lead,
+                                body: GHLData,
                                 method: "POST"
                             })
                             .then(x => {
@@ -17535,6 +17535,7 @@
                             displayError(phone, "unable to verify server side");
                             window._loq.push(["tag", 'TWL Err', true]);
                         });
+
                         SendLeadToGHL();
 
                 }
