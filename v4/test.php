@@ -17438,7 +17438,14 @@
                         }
                     }
                 }
+                if(first_name.is(":visible")){
+                    SendLeadToGHL();
 
+                }
+                if(last_name.is(":visible")){
+                    SendLeadToGHL();
+
+                }
                 // if zip is visible, server side validation
                 if (zip.is(":visible")) {
                     const postal = zip.val();
