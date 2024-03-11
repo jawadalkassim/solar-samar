@@ -17349,8 +17349,7 @@
 
 
                                     } else {
-                                      
-                                        SendLeadToServer()
+                                        postCall("https://pingpost.pro/leads/new", data)
 
                                         setTimeout(() => {
                                             window.location.href = "/thank-you.php?"
@@ -17359,7 +17358,7 @@
 
                                     }
                                 }).catch(x => {
-                                    SendLeadToServer()
+                                    postCall("https://pingpost.pro/leads/new", data)
                                     setTimeout(() => {
                                             window.location.href = "/thank-you.php?"
 
