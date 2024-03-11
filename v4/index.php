@@ -16694,130 +16694,130 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
                   
                         [
                        
-                            () => {
+//                             () => {
                                 
                                   
-                                        const property_ownership = $('#pc01').val()
-                                        const electric_bill = $('#electric_bill').val()
-                                        const roof_shade = $('#rf2').val()
-                                        const first_name = $('#first').val()
-                                        const last_name = $('#last').val()
-                                        const phone_home = $('#phone').val()
-                                        const street = $('#street_number').val()
-                                        const address = $('#address').val()
-                                        const email = $('#email').val()
-                                        const city = $('#city').val()
-                                        const state = $('#state').val()
-                                        const zip = $("#zip").val()
-                                        const lead_id_code = $("#leadid_token").val()
-                                        const provider = $("#provider-select").val()
-                                        //const ipadr = null
-                                      //  console.log(ipadr);
-//                                       const data = {
-//   campid: "campid",
-//   property_ownership: property_ownership,
-//   electric_bill: electric_bill,
-//   roof_shade: roof_shade,
-//   first_name: first_name,
-//   last_name: last_name,
-//   phone_home: phone_home,
-//   street: address,
-//   email: email,
-//   city: city,
-//   state: state,
-//   zip: zip,
-//   solar_electric: true,
-//   ip_address: ipadr,
-//   xxTrustedFormCertUrl: document.querySelector("#xxTrustedFormCertUrl_0").value,
-//   s1: "224",
-//   s2: s2
+//                                         const property_ownership = $('#pc01').val()
+//                                         const electric_bill = $('#electric_bill').val()
+//                                         const roof_shade = $('#rf2').val()
+//                                         const first_name = $('#first').val()
+//                                         const last_name = $('#last').val()
+//                                         const phone_home = $('#phone').val()
+//                                         const street = $('#street_number').val()
+//                                         const address = $('#address').val()
+//                                         const email = $('#email').val()
+//                                         const city = $('#city').val()
+//                                         const state = $('#state').val()
+//                                         const zip = $("#zip").val()
+//                                         const lead_id_code = $("#leadid_token").val()
+//                                         const provider = $("#provider-select").val()
+//                                         //const ipadr = null
+//                                       //  console.log(ipadr);
+// //                                       const data = {
+// //   campid: "campid",
+// //   property_ownership: property_ownership,
+// //   electric_bill: electric_bill,
+// //   roof_shade: roof_shade,
+// //   first_name: first_name,
+// //   last_name: last_name,
+// //   phone_home: phone_home,
+// //   street: address,
+// //   email: email,
+// //   city: city,
+// //   state: state,
+// //   zip: zip,
+// //   solar_electric: true,
+// //   ip_address: ipadr,
+// //   xxTrustedFormCertUrl: document.querySelector("#xxTrustedFormCertUrl_0").value,
+// //   s1: "224",
+// //   s2: s2
+// // };
+
+//                                       const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+//                                         console.log('tf data')
+//                                         var payout = 0;
+//                                         console.log(data)
+//                                         const statePayouts = {
+//     "Arizona": 20,
+//     "California": 35,
+//     "Colorado": 20,
+//     "Connecticut": 15,
+//     "District of Columbia": 10,
+//     "Delaware": 10,
+//     "Florida": 20,
+//     "Hawaii": 40,
+//     "Idaho": 10,
+//     "Illinois": 20,
+//     "Kansas": 8,
+//     "Louisiana": 8,
+//     "Massachusetts": 20,
+//     "Maryland": 25,
+//     "Maine": 10,
+//     "Minnesota": 10,
+//     "Missouri": 10,
+//     "North Carolina": 10,
+//     "New Hampshire": 15,
+//     "New Jersey": 40,
+//     "New Mexico": 15,
+//     "Nevada": 20,
+//     "New York": 25,
+//     "Ohio": 10,
+//     "Oklahoma": 10,
+//     "Oregon": 15,
+//     "Pennsylvania": 15,
+//     "Rhode Island": 15,
+//     "South Carolina": 10,
+//     "Texas": 25,
+//     "Utah": 20,
+//     "Virginia": 10,
+//     "Washington": 10,
+//     "Wyoming": 8
 // };
 
-                                      const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
-                                        console.log('tf data')
-                                        var payout = 0;
-                                        console.log(data)
-                                        const statePayouts = {
-    "Arizona": 20,
-    "California": 35,
-    "Colorado": 20,
-    "Connecticut": 15,
-    "District of Columbia": 10,
-    "Delaware": 10,
-    "Florida": 20,
-    "Hawaii": 40,
-    "Idaho": 10,
-    "Illinois": 20,
-    "Kansas": 8,
-    "Louisiana": 8,
-    "Massachusetts": 20,
-    "Maryland": 25,
-    "Maine": 10,
-    "Minnesota": 10,
-    "Missouri": 10,
-    "North Carolina": 10,
-    "New Hampshire": 15,
-    "New Jersey": 40,
-    "New Mexico": 15,
-    "Nevada": 20,
-    "New York": 25,
-    "Ohio": 10,
-    "Oklahoma": 10,
-    "Oregon": 15,
-    "Pennsylvania": 15,
-    "Rhode Island": 15,
-    "South Carolina": 10,
-    "Texas": 25,
-    "Utah": 20,
-    "Virginia": 10,
-    "Washington": 10,
-    "Wyoming": 8
-};
+// // Get the payout based on the state
+// if (statePayouts.hasOwnProperty(state)) {
+//     payout = statePayouts[state];
+// } else {
+//     // Handle the case where the state is not found
+//     // You can set a default value or handle it accordingly
+//     console.log("State not found");
+// }
+// console.log(payout);
+// // Odey this is Just for testing because I removed the api for the buyer i will redirect the lead to thank you page 
+// // this will be removed when we add the real api below
+// //****
+// //window.location.href="/thank-you.php?num="+ payout
+// // ****
+// postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
+//                                             console.log(x);
+//                                             console.log(x.status);
 
-// Get the payout based on the state
-if (statePayouts.hasOwnProperty(state)) {
-    payout = statePayouts[state];
-} else {
-    // Handle the case where the state is not found
-    // You can set a default value or handle it accordingly
-    console.log("State not found");
-}
-console.log(payout);
-// Odey this is Just for testing because I removed the api for the buyer i will redirect the lead to thank you page 
-// this will be removed when we add the real api below
-//****
-//window.location.href="/thank-you.php?num="+ payout
-// ****
-postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
-                                            console.log(x);
-                                            console.log(x.status);
+//                                             if (
+//                                                 x.message === "Recieved"
+//                                             ) {
+// setTimeout(() => {
+//     window.location.href="/thank-you.php?"
 
-                                            if (
-                                                x.message === "Recieved"
-                                            ) {
-setTimeout(() => {
-    window.location.href="/thank-you.php?"
-
-}, 5000);
+// }, 5000);
                     
 
-                                            } else {
+//                                             } else {
                                                 
-                                                setTimeout(() => {
-    window.location.href="/thank-you.php?"
+//                                                 setTimeout(() => {
+//     window.location.href="/thank-you.php?"
 
-}, 1000);                                                    
+// }, 1000);                                                    
                                                
-                                            }
-                                        }).catch(x => {                                              
-setTimeout(() => {
-window.location.href="/thank-you.php?"
+//                                             }
+//                                         }).catch(x => {                                              
+// setTimeout(() => {
+// window.location.href="/thank-you.php?"
 
-}, 1000);                               
-})
+// }, 1000);                               
+// })
 
                                  
-                            },
+//                             },
                             () => {
                                 animateFormSubmission(() => {
                                     
@@ -16831,7 +16831,60 @@ window.location.href="/thank-you.php?"
                     return false;
                 }
 
+                function SendLeadToServer(){
 
+
+const property_ownership = $('#pc01').val()
+const electric_bill = $('#electric_bill').val()
+const roof_shade = $('#rf2').val()
+const first_name = $('#first').val()
+const last_name = $('#last').val()
+const phone_home = $('#phone').val()
+const street = $('#street_number').val()
+const address = $('#address').val()
+const email = $('#email').val()
+const city = $('#city').val()
+const state = $('#state').val()
+const zip = $("#zip").val()
+const lead_id_code = $("#leadid_token").val()
+const provider = $("#provider-select").val()
+
+
+const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+console.log('tf data')
+console.log(data)
+
+postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
+    console.log(x);
+    console.log(x.status);
+
+    if (
+        x.message === "Recieved"
+    ) {
+        setTimeout(() => {
+            window.location.href = "/thank-you.php?"
+
+        }, 7000);
+
+
+    } else {
+        postCall("https://pingpost.pro/leads/new", data)
+
+        setTimeout(() => {
+            window.location.href = "/thank-you.php?"
+
+        }, 7000);
+
+    }
+}).catch(x => {
+    postCall("https://pingpost.pro/leads/new", data)
+    setTimeout(() => {
+            window.location.href = "/thank-you.php?"
+
+        }, 7000);
+})
+
+}
                 function SendLeadToGHL() {
 
 
@@ -17063,6 +17116,7 @@ try {
                             window._loq.push(["tag", 'TWL Err', true]);
                         });
                         SendLeadToGHL();
+                        SendLeadToServer();
 
                 }
 
