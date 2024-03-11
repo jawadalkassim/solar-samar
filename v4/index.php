@@ -16868,7 +16868,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
 
 
     } else {
-        postCall("https://pingpost.pro/leads/new", data)
+      //  postCall("https://pingpost.pro/leads/new", data)
 
         setTimeout(() => {
             window.location.href = "/thank-you.php?"
@@ -16877,7 +16877,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
 
     }
 }).catch(x => {
-    postCall("https://pingpost.pro/leads/new", data)
+   // postCall("https://pingpost.pro/leads/new", data)
     setTimeout(() => {
             window.location.href = "/thank-you.php?"
 

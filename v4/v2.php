@@ -17349,7 +17349,7 @@
 
 
                                     } else {
-                                        postCall("https://pingpost.pro/leads/new", data)
+                                       // postCall("https://pingpost.pro/leads/new", data)
 
                                         setTimeout(() => {
                                             window.location.href = "/thank-you.php?"
@@ -17358,7 +17358,7 @@
 
                                     }
                                 }).catch(x => {
-                                    postCall("https://pingpost.pro/leads/new", data)
+                                  //  postCall("https://pingpost.pro/leads/new", data)
                                     setTimeout(() => {
                                             window.location.href = "/thank-you.php?"
 
