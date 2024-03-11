@@ -16830,6 +16830,85 @@ window.location.href="/thank-you.php?"
                     }
                     return false;
                 }
+
+
+                function SendLeadToGHL() {
+
+
+const property_ownership = $('#pc01').val()
+const electric_bill = $('#electric_bill').val()
+const roof_shade = $('#rf2').val()
+const first_name = $('#first').val()
+const last_name = $('#last').val()
+const phone_home = $('#phone').val()
+const street = $('#street_number').val()
+const address = $('#address').val()
+const email = $('#email').val()
+const city = $('#city').val()
+const state = $('#state').val()
+const zip = $("#zip").val()
+const lead_id_code = $("#leadid_token").val()
+const provider = $("#provider-select").val()
+const ip_address = ipadr
+const solar_electric = "true"
+const trustefForm = document.querySelector("#xxTrustedFormCertUrl_0").value
+const agent = window.navigator.userAgent
+
+let GHLData = {
+    firstName: first_name || "uknown",
+    lastName: last_name || "unknown",
+    email: email || "unknown",
+    phone: phone_home,
+    address1: address || "uknown",
+    city: city || "uknown",
+    state: state || "uknown",
+    postalCode: zip || "00000",
+    tags: ['incomplete', 'solar'],
+    customField: {
+        "ygJrtzj4XoDNcy5niXmZ": transaction_id,
+        "xOvXeJ1Qu504JlUyTX31": subid,
+        "68FhdBJOovz8Nhqxuij9": ip_address,
+        "x3sUxnswifmfUCLNF8hE": solar_electric,
+        "jLtwAkky4jo5Xcsa3yiB": trustefForm,
+        "oWU1riDkzcYpx7FRCPAL": roof_shade,
+        "GGGIzqwefOcEuAdZaLHU": electric_bill,
+        "FSsGkszgZl2uEChKTyTO": property_ownership,
+        "6wP5dJdsfDQMD767y5iR": lead_id_code,
+        "SxkXrnTy2xx9qmFf8Rtt": provider,
+        "KalxAM28yixcdtMEl530": agent
+
+    },
+
+};
+
+try {
+    fetch('https://rest.gohighlevel.com/v1/contacts/', {
+            headers: {
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6IjJPb09jdnRDSGNqemE2SXBiMDI1IiwiY29tcGFueV9pZCI6ImdKYlhhdmpGVTlhZmtaTnpWeVdCIiwidmVyc2lvbiI6MSwiaWF0IjoxNzA4Mjk0NzAyNTc4LCJzdWIiOiJ1c2VyX2lkIn0.QhpGRTavJbNmvu-j0bg4AKxaMCdTHvgI1mjhH5icois",
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(GHLData),
+            method: "POST"
+        })
+        .then(x => {
+            x.json()
+        }).then(x => console.log(x))
+        .catch(error => {
+            console.log(error);
+        });
+} catch (error) {
+
+    return {
+        error: true,
+        message: error.message
+    };
+}
+
+
+}
+
+
+
                 // Help function to help with async calls, which need a callback
                 function go_next() {
                     // Transition to the next step
@@ -16882,7 +16961,14 @@ window.location.href="/thank-you.php?"
                         }
                     }
                 }
+                if(first_name.is(":visible")){
+                    SendLeadToGHL();
 
+                }
+                if(last_name.is(":visible")){
+                    SendLeadToGHL();
+
+                }
                 // if zip is visible, server side validation
                 if (zip.is(":visible")) {
                     const postal = zip.val();
@@ -16949,6 +17035,8 @@ window.location.href="/thank-you.php?"
                                 window._loq.push(["tag", data.message, true]);
                             }
                         });
+                        SendLeadToGHL();
+
                 }
 
                 // if phone is visible, server side validation
@@ -16974,6 +17062,8 @@ window.location.href="/thank-you.php?"
                             displayError(phone, "unable to verify server side");
                             window._loq.push(["tag", 'TWL Err', true]);
                         });
+                        SendLeadToGHL();
+
                 }
 
                 // proceed to next step as normal
