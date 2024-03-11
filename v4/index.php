@@ -16864,7 +16864,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
         setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
-        }, 7000);
+        }, 5000);
 
 
     } else {
@@ -16873,7 +16873,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
         setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
-        }, 7000);
+        }, 5000);
 
     }
 }).catch(x => {
@@ -16881,7 +16881,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
     setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
-        }, 7000);
+        }, 5000);
 })
 
 }

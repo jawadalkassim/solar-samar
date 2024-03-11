@@ -17337,7 +17337,6 @@
 
                                 postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
                                     console.log(x);
-                                    console.log(x.status);
 
                                     if (
                                         x.message === "Recieved"
