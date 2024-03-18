@@ -26,6 +26,7 @@
         var urlParams = new URLSearchParams(window.location.search);
         var subid = urlParams.get('sub1');
         var transaction_id = urlParams.get('sub2');
+        var campName = urlParams.get('sub5');
 
     
     </script>
@@ -16065,7 +16066,7 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
              * Populate utility provider drop down (based on zip)
              **/
             function populateProviderDropdown(selected_provider) {
-                const zipField = $('#zip');
+                const zipField = $('#zip') || "33133";
                 let zip = zipField.val();
                 if (zip.length > 0) {
                     const state = getState(zip);
@@ -16850,7 +16851,7 @@ const lead_id_code = $("#leadid_token").val()
 const provider = $("#provider-select").val()
 
 
-const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}&campName=${campName}`
 console.log('tf data')
 console.log(data)
 
@@ -16928,7 +16929,9 @@ let GHLData = {
         "FSsGkszgZl2uEChKTyTO": property_ownership,
         "6wP5dJdsfDQMD767y5iR": lead_id_code,
         "SxkXrnTy2xx9qmFf8Rtt": provider,
-        "KalxAM28yixcdtMEl530": agent
+        "KalxAM28yixcdtMEl530": agent,
+        "cvXLsNGTxXI0M5L1N56O": campName
+
 
     },
 
