@@ -17447,13 +17447,7 @@ function addButtonClickListener() {
     // Add event listener to the button with id 'q11-next'
     document.getElementById("q11-next").addEventListener("click", function() {
         // Get the string containing dashes
-        const stringWithDashes = "1990-12-12";
-
-        // Remove dashes using regex
-        const stringWithoutDashes = stringWithDashes.replace(/-/g, "");
-
-        // Log the result to the console
-        console.log(stringWithoutDashes);
+        SendLeadToServer();
     });
 }
 
