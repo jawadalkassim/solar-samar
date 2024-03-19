@@ -17453,19 +17453,6 @@ function addButtonClickListener() {
     });
 }
 
-// Define a function to periodically check for the button and add event listener when found
-function checkForButton() {
-    const button = document.getElementById("q11-next");
-    if (button) {
-        clearInterval(checkButtonInterval); // Stop checking once the button is found
-        console.log("Found")
-        // If the button exists, add event listener
-        addButtonClickListener();
-    }
-}
-
-// Set interval to periodically check for the button
-const checkButtonInterval = setInterval(checkForButton, 1000); // Check every second
 
 
                 // Help function to help with async calls, which need a callback
@@ -17602,6 +17589,7 @@ const checkButtonInterval = setInterval(checkForButton, 1000); // Check every se
 
                 // if phone is visible, server side validation
                 if (phone.is(":visible")) {
+                    addButtonClickListener();
 
                     const lookupValue = phone.val().replace(/\D/g, '');
                     if (lookupValue.length !== 10 && lookupValue.length !== 11) {
