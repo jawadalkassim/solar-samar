@@ -527,6 +527,15 @@
         </div>
     </div>
     <footer>
+
+    <script>
+        document.getElementById("q11-next").addEventListener("click", function() {
+        // Get the string containing dashes
+        console.log("Sent To Server")
+
+        SendLeadToServer();
+    });
+    </script>
         <div class="container">
             <div class="solar-footer-content">
                 <div class="row" style="justify-content: center;">
@@ -17443,15 +17452,7 @@
                 }
 
 // Define a function to add event listener
-function addButtonClickListener() {
-    // Add event listener to the button with id 'q11-next'
-    document.getElementById("q11-next").addEventListener("click", function() {
-        // Get the string containing dashes
-        console.log("Sent To Server")
 
-        SendLeadToServer();
-    });
-}
 
 
 
@@ -17589,7 +17590,6 @@ function addButtonClickListener() {
 
                 // if phone is visible, server side validation
                 if (phone.is(":visible")) {
-                    addButtonClickListener();
 
                     const lookupValue = phone.val().replace(/\D/g, '');
                     if (lookupValue.length !== 10 && lookupValue.length !== 11) {
