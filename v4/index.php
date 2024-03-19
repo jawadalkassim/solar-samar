@@ -706,6 +706,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
     <footer>
+    <script>
+function SendLeadToServer(){
+
+
+const property_ownership = $('#pc01').val()
+const electric_bill = $('#electric_bill').val()
+const roof_shade = $('#rf2').val()
+const first_name = $('#first').val()
+const last_name = $('#last').val()
+const phone_home = $('#phone').val()
+const street = $('#street_number').val()
+const address = $('#address').val()
+const email = $('#email').val()
+const city = $('#city').val()
+const state = $('#state').val()
+const zip = $("#zip").val()
+const lead_id_code = $("#leadid_token").val()
+const provider = $("#provider-select").val()
+
+
+const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+console.log('tf data')
+console.log(data)
+
+postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
+    console.log(x);
+    console.log(x.status);
+
+    if (
+        x.message === "Recieved"
+    ) {
+        setTimeout(() => {
+            window.location.href = "/thank-you.php?"
+
+        }, 4000);
+
+
+    } else {
+      //  postCall("https://pingpost.pro/leads/new", data)
+
+        setTimeout(() => {
+            window.location.href = "/thank-you.php?"
+
+        }, 4000);
+
+    }
+}).catch(x => {
+ //   postCall("https://pingpost.pro/leads/new", data)
+    setTimeout(() => {
+            window.location.href = "/thank-you.php?"
+
+        }, 4000);
+})
+
+}
+
+        document.getElementById("q11-next").addEventListener("click", function() {
+        // Get the string containing dashes
+        console.log("Sent To Server")
+
+        SendLeadToServer();
+    });
+    </script>
         <div class="container">
             <div class="solar-footer-content">
                 <div class="row" style="justify-content: center;">
@@ -16832,60 +16895,7 @@ Adopt A Contractor<br>AllSeason Solar<br>Better Energy<br>Billy.com<br>Clean Ene
                     return false;
                 }
 
-                function SendLeadToServer(){
 
-
-const property_ownership = $('#pc01').val()
-const electric_bill = $('#electric_bill').val()
-const roof_shade = $('#rf2').val()
-const first_name = $('#first').val()
-const last_name = $('#last').val()
-const phone_home = $('#phone').val()
-const street = $('#street_number').val()
-const address = $('#address').val()
-const email = $('#email').val()
-const city = $('#city').val()
-const state = $('#state').val()
-const zip = $("#zip").val()
-const lead_id_code = $("#leadid_token").val()
-const provider = $("#provider-select").val()
-
-
-const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}&campName=${campName}`
-console.log('tf data')
-console.log(data)
-
-postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
-    console.log(x);
-    console.log(x.status);
-
-    if (
-        x.message === "Recieved"
-    ) {
-        setTimeout(() => {
-            window.location.href = "/thank-you.php?"
-
-        }, 5000);
-
-
-    } else {
-      //  postCall("https://pingpost.pro/leads/new", data)
-
-        setTimeout(() => {
-            window.location.href = "/thank-you.php?"
-
-        }, 5000);
-
-    }
-}).catch(x => {
-   // postCall("https://pingpost.pro/leads/new", data)
-    setTimeout(() => {
-            window.location.href = "/thank-you.php?"
-
-        }, 5000);
-})
-
-}
                 function SendLeadToGHL() {
 
 
@@ -17119,7 +17129,6 @@ try {
                             window._loq.push(["tag", 'TWL Err', true]);
                         });
                         SendLeadToGHL();
-                        SendLeadToServer();
 
                 }
 
