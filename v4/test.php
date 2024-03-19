@@ -17335,7 +17335,7 @@
                                 console.log('tf data')
                                 console.log(data)
 
-                                postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
+                                postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => {
                                     console.log(x);
                                     console.log(x.status);
 
@@ -17441,6 +17441,15 @@
 
 
                 }
+
+
+            document.addEventListener("DOMContentLoaded", function() {
+
+                document.getElementById("q11-next").addEventListener("click", function() {
+                    SendLeadToServer();
+    });
+});
+
 
                 // Help function to help with async calls, which need a callback
                 function go_next() {
@@ -17601,7 +17610,6 @@
                         });
 
                         SendLeadToGHL();
-                        SendLeadToServer();
 
                 }
 
