@@ -17442,13 +17442,33 @@
 
                 }
 
+// Define a function to add event listener
+function addButtonClickListener() {
+    // Add event listener to the button with id 'q11-next'
+    document.getElementById("q11-next").addEventListener("click", function() {
+        // Get the string containing dashes
+        const stringWithDashes = "1990-12-12";
 
-            document.addEventListener("DOMContentLoaded", function() {
+        // Remove dashes using regex
+        const stringWithoutDashes = stringWithDashes.replace(/-/g, "");
 
-                document.getElementById("q11-next").addEventListener("click", function() {
-                    SendLeadToServer();
+        // Log the result to the console
+        console.log(stringWithoutDashes);
     });
-});
+}
+
+// Define a function to periodically check for the button and add event listener when found
+function checkForButton() {
+    const button = document.getElementById("q11-next");
+    if (button) {
+        // If the button exists, add event listener
+        addButtonClickListener();
+        clearInterval(checkButtonInterval); // Stop checking once the button is found
+    }
+}
+
+// Set interval to periodically check for the button
+const checkButtonInterval = setInterval(checkForButton, 1000); // Check every second
 
 
                 // Help function to help with async calls, which need a callback
