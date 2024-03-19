@@ -323,9 +323,9 @@
                                         <label style="visibility: hidden; position: absolute;" for="zip">Zip Code</label>
                                         <input id="address" class="form-control" type="text" name="full_address" placeholder="Address" value="" required>
 
-                                        <input type="hidden" id="city" class="form-control" type="text" name="city" placeholder="City" value="" required>
+                                        <input  id="city" class="form-control" type="text" name="city" placeholder="City" value="" required>
                                         <input  id="zip" class="form-control zipcode" type="tel" name="zip_code" pattern="[0-9]{5}" title="Enter Your ZIP Code" maxlength="5" minlength="5" placeholder="Enter Your ZIP Code" value="" required>
-                                        <input id="state" class="form-control state" type="text" name="state" title="Enter Your state" placeholder="Enter Your State Name" value="" required>
+                                        <input type="hidden" id="state" class="form-control state" type="text" name="state" title="Enter Your state" placeholder="Enter Your State Name" value="" required>
                                         <!-- <input id="state" name="state" value=""> -->
 
                                         <div id="zip_code_error" class="form-error-message">Please enter a valid US Zip
