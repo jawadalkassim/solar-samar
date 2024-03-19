@@ -17447,6 +17447,8 @@ function addButtonClickListener() {
     // Add event listener to the button with id 'q11-next'
     document.getElementById("q11-next").addEventListener("click", function() {
         // Get the string containing dashes
+        console.log("Sent To Server")
+
         SendLeadToServer();
     });
 }
@@ -17455,9 +17457,10 @@ function addButtonClickListener() {
 function checkForButton() {
     const button = document.getElementById("q11-next");
     if (button) {
+        clearInterval(checkButtonInterval); // Stop checking once the button is found
+        console.log("Found")
         // If the button exists, add event listener
         addButtonClickListener();
-        clearInterval(checkButtonInterval); // Stop checking once the button is found
     }
 }
 
