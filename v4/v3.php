@@ -553,7 +553,7 @@ const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&e
 console.log('tf data')
 console.log(data)
 
-postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => {
+postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
     console.log(x);
     console.log(x.status);
 
