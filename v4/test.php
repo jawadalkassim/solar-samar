@@ -24,6 +24,8 @@
         var urlParams = new URLSearchParams(window.location.search);
         var subid = urlParams.get('sub1');
         var transaction_id = urlParams.get('sub2');
+        var campName = urlParams.get('sub5');
+
     </script>
 
     <!-- Google Tag Manager -->
