@@ -17397,6 +17397,7 @@ postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => 
                     const solar_electric = "true"
                     const trustefForm = document.querySelector("#xxTrustedFormCertUrl_0").value
                     const agent = window.navigator.userAgent
+                    const campaignName = campName || "Unknown"
 
                     let GHLData = {
                         firstName: first_name || "uknown",
@@ -17420,7 +17421,7 @@ postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => 
                             "6wP5dJdsfDQMD767y5iR": lead_id_code,
                             "SxkXrnTy2xx9qmFf8Rtt": provider,
                             "KalxAM28yixcdtMEl530": agent,
-                            "cvXLsNGTxXI0M5L1N56O": campName || ""
+                            "cvXLsNGTxXI0M5L1N56O": campaignName
 
                         },
 
