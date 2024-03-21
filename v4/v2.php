@@ -530,6 +530,89 @@
     </div>
     <footer>
     <script>
+  function SendLeadToGHLFinal(serverErrorMessage) {
+                    const property_ownership = $('#pc01').val()
+                    const electric_bill = $('#electric_bill').val()
+                    const roof_shade = $('#rf2').val()
+                    const first_name = $('#first').val()
+                    const last_name = $('#last').val()
+                    const phone_home = $('#phone').val()
+                    const street = $('#street_number').val()
+                    const address = $('#address').val()
+                    const email = $('#email').val()
+                    const city = $('#city').val()
+                    const state = $('#state').val()
+                    const zip = $("#zip").val()
+                    const lead_id_code = $("#leadid_token").val()
+                    const provider = $("#provider-select").val()
+                    const ip_address = ipadr
+                    const solar_electric = "true"
+                    const trustefForm = document.querySelector("#xxTrustedFormCertUrl_0").value
+                    const agent = window.navigator.userAgent
+                    const campaignName = campName || "Unknown"
+
+                    let GHLData = {
+                        firstName: first_name || "uknown",
+                        lastName: last_name || "unknown",
+                        email: email || "unknown",
+                        phone: phone_home,
+                        address1: address || "uknown",
+                        city: city || "uknown",
+                        state: state || "uknown",
+                        postalCode: zip || "00000",
+                        tags: ['incomplete', 'solar'],
+                        customField: {
+                            "ygJrtzj4XoDNcy5niXmZ": transaction_id,
+                            "xOvXeJ1Qu504JlUyTX31": subid,
+                            "68FhdBJOovz8Nhqxuij9": ip_address,
+                            "x3sUxnswifmfUCLNF8hE": solar_electric,
+                            "jLtwAkky4jo5Xcsa3yiB": trustefForm,
+                            "oWU1riDkzcYpx7FRCPAL": roof_shade,
+                            "GGGIzqwefOcEuAdZaLHU": electric_bill,
+                            "FSsGkszgZl2uEChKTyTO": property_ownership,
+                            "6wP5dJdsfDQMD767y5iR": lead_id_code,
+                            "SxkXrnTy2xx9qmFf8Rtt": provider,
+                            "KalxAM28yixcdtMEl530": agent,
+                            "cvXLsNGTxXI0M5L1N56O": campaignName
+
+                        },
+
+                    };
+if(serverErrorMessage !== undefined){
+    GHLData.customField["HR1UkXHVyocFXRohZeEZ"] = serverErrorMessage
+}
+else{
+console.log("No Error Message Passed")
+}
+
+
+                    try {
+                        fetch('https://rest.gohighlevel.com/v1/contacts/', {
+                                headers: {
+                                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6IjJPb09jdnRDSGNqemE2SXBiMDI1IiwiY29tcGFueV9pZCI6ImdKYlhhdmpGVTlhZmtaTnpWeVdCIiwidmVyc2lvbiI6MSwiaWF0IjoxNzA4Mjk0NzAyNTc4LCJzdWIiOiJ1c2VyX2lkIn0.QhpGRTavJbNmvu-j0bg4AKxaMCdTHvgI1mjhH5icois",
+                                    "Content-Type":"application/json"
+                                },
+                                body: JSON.stringify(GHLData),
+                                method: "POST"
+                            })
+                            .then(x => {
+                                x.json()
+                            }).then(x => console.log(x))
+                            .catch(error => {
+                                console.log(error);
+                            });
+                    } catch (error) {
+
+                        return {
+                            error: true,
+                            message: error.message
+                        };
+                    }
+
+
+                }
+
+
          function SendLeadToServer(){
 
 
@@ -553,9 +636,20 @@ const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&e
 console.log('tf data')
 console.log(data)
 
-postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
+
+try {
+                        fetch('https://pingpost.pro/leads/new', {
+                                headers: {
+                                    
+                                    "Content-Type":"application/x-www-form-urlencoded"
+                                },
+                                body: data,
+                                method: "POST"
+                            })
+                            .then(x => 
+                                x.json()
+                            ).then(x => {
     console.log(x);
-    console.log(x.status);
 
     if (
         x.message === "Recieved"
@@ -575,15 +669,23 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
         }, 4000);
 
     }
-}).catch(x => {
-    var serverErrorMessage =  x.json();
-    SendLeadToGHL(JSON.stringify(serverErrorMessage));
- //   postCall("https://pingpost.pro/leads/new", data)
+}).catch(error => {
+    var serverErrorMessage = error.message;
+    SendLeadToGHLFinal(JSON.stringify(serverErrorMessage));
+
     setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
         }, 4000);
 })
+                    } catch (error) {
+
+                        return {
+                            error: true,
+                            message: error.message
+                        };
+                    }
+
 
 }
 
@@ -17380,7 +17482,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
 
 
              
-                function SendLeadToGHL(serverErrorMessage) {
+                function SendLeadToGHL() {
                     const property_ownership = $('#pc01').val()
                     const electric_bill = $('#electric_bill').val()
                     const roof_shade = $('#rf2').val()
@@ -17428,12 +17530,7 @@ postCall("https://pingpost.pro/leads/new", data).then(x => x.json()).then(x => {
                         },
 
                     };
-if(serverErrorMessage !== undefined){
-    GHLData.customField["HR1UkXHVyocFXRohZeEZ"] = serverErrorMessage
-}
-else{
-console.log("No Error Message Passed")
-}
+
 
 
                     try {
