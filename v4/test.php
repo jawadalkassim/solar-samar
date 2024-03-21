@@ -568,7 +568,6 @@ try {
                                 x.json()
                             }).then(x => {
     console.log(x);
-    console.log(x.status);
 
     if (
         x.message === "Recieved"
@@ -576,7 +575,7 @@ try {
         setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
-        }, 7000);
+        }, 4000);
 
 
     } else {
@@ -585,17 +584,17 @@ try {
         setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
-        }, 7000);
+        }, 4000);
 
     }
-}).catch(x => {
-    var serverErrorMessage =  x.json();
+}).catch(error => {
+    var serverErrorMessage = error.message;
     SendLeadToGHL(JSON.stringify(serverErrorMessage));
 
     setTimeout(() => {
             window.location.href = "/thank-you.php?"
 
-        }, 7000);
+        }, 4000);
 })
                     } catch (error) {
 
