@@ -647,9 +647,9 @@ try {
                                 body: data,
                                 method: "POST"
                             })
-                            .then(x => {
+                            .then(x => 
                                 x.json()
-                            }).then(x => {
+                            ).then(x => {
     console.log(x);
 
     if (
