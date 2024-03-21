@@ -554,7 +554,19 @@ const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&e
 console.log('tf data')
 console.log(data)
 
-postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => {
+
+try {
+                        fetch('https://pingpost.pro/leads/test', {
+                                headers: {
+                                    
+                                    "Content-Type":"application/json"
+                                },
+                                body: JSON.stringify(GHLData),
+                                method: "POST"
+                            })
+                            .then(x => {
+                                x.json()
+                            }).then(x => {
     console.log(x);
     console.log(x.status);
 
@@ -585,6 +597,14 @@ postCall("https://pingpost.pro/leads/test", data).then(x => x.json()).then(x => 
 
         }, 7000);
 })
+                    } catch (error) {
+
+                        return {
+                            error: true,
+                            message: error.message
+                        };
+                    }
+
 
 }
 
