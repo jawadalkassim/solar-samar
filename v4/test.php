@@ -559,9 +559,9 @@ try {
                         fetch('https://pingpost.pro/leads/test', {
                                 headers: {
                                     
-                                    "Content-Type":"application/json"
+                                    "Content-Type":"application/x-www-form-urlencoded"
                                 },
-                                body: JSON.stringify(GHLData),
+                                body: data,
                                 method: "POST"
                             })
                             .then(x => {
