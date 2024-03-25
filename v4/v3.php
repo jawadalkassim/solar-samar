@@ -638,7 +638,7 @@ console.log(data)
 
 
 try {
-                        fetch('https://pingpost.pro/leads/test', {
+                        fetch('https://pingpost.pro/leads/new', {
                                 headers: {
                                     
                                     "Content-Type":"application/x-www-form-urlencoded"
@@ -686,36 +686,21 @@ try {
                         };
                     }
 
-// Define a function to check if the input for #phone is not empty and add the event listener accordingly
-function checkPhoneInput() {
-    var phoneInput = document.getElementById("phone");
-    if (phoneInput.value.trim() !== '') {
-        // If the input is not empty, add the event listener
-        document.getElementById("q11-next").addEventListener("click", function() {
-            // Get the string containing dashes
-            SendLeadToServer();
-        });
-    } else {
-        
-    }
-}
-
-// Call the function initially to set up the event listener based on the initial state of the input
-checkPhoneInput();
-
-// Use setInterval to continuously check the input and update the event listener
-setInterval(checkPhoneInput, 1000); // You can adjust the interval as needed
 
 }
 // Check if the input for #phone is not empty
-// var phoneInput = document.getElementById("phone");
-// if (phoneInput.value.trim() !== '') {
-//     // If the input is not empty, add the event listener
-//     document.getElementById("q11-next").addEventListener("click", function() {
-//         // Get the string containing dashes
-//         SendLeadToServer();
-//     });
-// }
+var phoneInput = document.getElementById("phone");
+document.getElementById("q11-next").addEventListener("click", function() {
+        // Get the string containing dashes
+        if (phoneInput.value.trim() !== '') {
+    // If the input is not empty, add the event listener
+    SendLeadToServer();
+
+}else {
+    console.log("Phone is empty")
+}
+    });
+
 
     </script>
         <div class="container">
