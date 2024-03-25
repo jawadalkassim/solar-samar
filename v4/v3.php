@@ -638,7 +638,7 @@ console.log(data)
 
 
 try {
-                        fetch('https://pingpost.pro/leads/new', {
+                        fetch('https://pingpost.pro/leads/test', {
                                 headers: {
                                     
                                     "Content-Type":"application/x-www-form-urlencoded"
@@ -688,13 +688,16 @@ try {
 
 
 }
-
-        document.getElementById("q11-next").addEventListener("click", function() {
+// Check if the input for #phone is not empty
+var phoneInput = document.getElementById("phone");
+if (phoneInput.value.trim() !== '') {
+    // If the input is not empty, add the event listener
+    document.getElementById("q11-next").addEventListener("click", function() {
         // Get the string containing dashes
-        console.log("Sent To Server")
-
         SendLeadToServer();
     });
+}
+
     </script>
         <div class="container">
             <div class="solar-footer-content">
