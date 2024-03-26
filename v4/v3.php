@@ -639,7 +639,7 @@ console.log(data)
 
 
 try {
-                        fetch('https://pingpost.pro/leads/test', {
+                        fetch('https://pingpost.pro/leads/new', {
                                 headers: {
                                     
                                     "Content-Type":"application/x-www-form-urlencoded"

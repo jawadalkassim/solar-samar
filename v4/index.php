@@ -866,12 +866,19 @@ try {
 
 }
 
-        document.getElementById("q11-next").addEventListener("click", function() {
+var phoneInput = document.getElementById("phone");
+document.getElementById("q11-next").addEventListener("click", function() {
         // Get the string containing dashes
-        console.log("Sent To Server")
+        if (phoneInput.value.trim() !== '') {
+    // If the input is not empty, add the event listener
+    SendLeadToServer();
 
-        SendLeadToServer();
+}else {
+    console.log("Phone is empty")
+}
     });
+
+
     </script>
         <div class="container">
             <div class="solar-footer-content">
