@@ -277,7 +277,7 @@
                                 <input type="hidden" id="interested_in_solar_hot_water" name="interested_in_solar_hot_water" value="no">
                                 <input type="hidden" id="interested_in_solar_pool_heating" name="interested_in_solar_pool_heating" value="no">
                                 <input type="hidden" id="street_number" name="street_number" value="">
-                                <input type="hidden" id="short-state" name="short-state" value="">
+                                <input type="hidden" id="short-state" name="short-state" value="FL">
                                 <input type="hidden" name="sub1" id="sub1Input">
                                 <input type="hidden" id="route" name="street" value="">
                                 <input type="hidden" id="administrative_area_level_1" name="state" value="">
