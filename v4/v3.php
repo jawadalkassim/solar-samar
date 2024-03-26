@@ -16803,7 +16803,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
 
                     if (row[0] === 'zip_code') {
                         const zipValue = row[1];
-                        validateZipValue(zipValue);
+                        //validateZipValue(zipValue);
                     }
 
                     if (row[0] === 'electric_bill') {
@@ -17076,7 +17076,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                 field.addClass("error");
                 const field_id = field.attr("id");
                 $("#" + field_id + "_error").show();
-                $.get("/papi//persist.php?op=form_error&sub_type=" + field_id + "&error=" + encodeURIComponent(error), function(data) {
+                $.get("/papi/persist.php?op=form_error&sub_type=" + field_id + "&error=" + encodeURIComponent(error), function(data) {
                     /* do nothing */
                 });
                 toggleNextButtons(true);
@@ -17140,7 +17140,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
             });
 
             let persistClickEngagement = () => {
-                $.get("/papi//persist.php?op=click", function(data) {
+                $.get("/papi/persist.php?op=click", function(data) {
                     /* do nothing */
                 });
                 persistClickEngagement = () => {
@@ -17341,7 +17341,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                                 success();
                                 return;
                             }
-                            $.get("/papi//validate.php?op=posted&version=v4&id=" + conversion_id, function(res) {
+                            $.get("/papi/validate.php?op=posted&version=v4&id=" + conversion_id, function(res) {
                                     if (res.message === "posted") {
                                         if (typeof success == 'function') {
                                             measureSubmissionDuration.capture('complete');
@@ -17627,38 +17627,38 @@ document.getElementById("q11-next").addEventListener("click", function() {
 
                 }
                 // if zip is visible, server side validation
-                if (zip.is(":visible")) {
-                    const postal = zip.val();
-                    const state = document.getElementById('short-state').value
-                    if (!state || state == 'none') {
-                        displayError(zip, "unable to verify prefix");
-                        return false;
-                    }
+                // if (zip.is(":visible")) {
+                //     const postal = zip.val();
+                //     const state = document.getElementById('short-state').value
+                //     if (!state || state == 'none') {
+                //         displayError(zip, "unable to verify prefix");
+                //         return false;
+                //     }
 
 
-                    working.show();
-                    ajaxVerify("/papi//validate.php?op=location&version=v4&postal=" + postal, function(response) {
+                //     working.show();
+                //     ajaxVerify("./papi/validate.php?op=location&version=v4&postal=" + postal, function(response) {
 
-                        let details = response.body;
-                        details = JSON.parse(details)
-                        serverCity = details["place name"];
-                        serverState = details.state;
-                        serverZip = postal;
-                        serverLong = details.longitude;
-                        serverLat = details.latitude;
-                        $('#locality').val(serverCity)
-                        $('#zip').val(serverZip)
+                //         let details = response.body;
+                //         details = JSON.parse(details)
+                //         serverCity = details["place name"];
+                //         serverState = details.state;
+                //         serverZip = postal;
+                //         serverLong = details.longitude;
+                //         serverLat = details.latitude;
+                //         $('#locality').val(serverCity)
+                //         $('#zip').val(serverZip)
 
 
-                        working.hide();
+                //         working.hide();
 
-                        go_next();
-                    }, function() {
-                        working.hide();
-                        displayError(zip, "unable to verify against DB");
-                        window._loq.push(["tag", 'Zip Err', true]);
-                    });
-                }
+                //         go_next();
+                //     }, function() {
+                //         working.hide();
+                //         displayError(zip, "unable to verify against DB");
+                //         window._loq.push(["tag", 'Zip Err', true]);
+                //     });
+                // }
 
                 // if email is visible, server side validation
                 if (email.is(":visible")) {
@@ -17675,7 +17675,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                     }
 
                     working.show();
-                    const path = "/papi//validate.php?op=email&version=v4&address=" + value + "&zip=" + zip.val();
+                    const path = "/papi/validate.php?op=email&version=v4&address=" + value + "&zip=" + zip.val();
                     ajaxVerify(path,
                         function(data) {
                             working.hide();
@@ -17707,7 +17707,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                         return false;
                     }
                     working.show();
-                    const path = "/papi//validate.php?op=phone&number=" + lookupValue + "&version=v4";
+                    const path = "/papi/validate.php?op=phone&number=" + lookupValue + "&version=v4";
                     ajaxVerify(path,
                         function() {
                             working.hide();
@@ -17729,7 +17729,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                 }
 
                 // proceed to next step as normal
-                if (!email.is(":visible") && !phone.is(":visible") && !zip.is(":visible")) {
+                if (!email.is(":visible") && !phone.is(":visible")) {
                     go_next();
                 }
             };
@@ -17802,7 +17802,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                         if (err) {
                             err.style.display = 'block';
                         }
-                        $.get("/papi//persist.php?op=error&sub_type=" + input.id + "&error=failed+html5+rule", function(data) {
+                        $.get("/papi/persist.php?op=error&sub_type=" + input.id + "&error=failed+html5+rule", function(data) {
                             /* do nothing */
                         });
                         toggleSubmitButtons(true);
@@ -17829,7 +17829,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
             const spentTime = endDate.getTime() - startDate.getTime();
             elapsedTime += spentTime;
             // elapsedTime contains the time spent on page in milliseconds
-            $.get("/papi//persist.php?op=" + bounceType + "&duration=" + elapsedTime, function(data) {
+            $.get("/papi/persist.php?op=" + bounceType + "&duration=" + elapsedTime, function(data) {
                 /* do nothing */
             });
         };
@@ -17859,13 +17859,13 @@ document.getElementById("q11-next").addEventListener("click", function() {
                     $('.form-steps, .form-steps:hidden').each(function() {
                         tags.push($(this).data('tag'));
                     });
-                    $.get("/papi//persist.php?op=pageview&sub_type=form&tags=" + encodeURIComponent(tags.join(',')), function(data) {
+                    $.get("/papi/persist.php?op=pageview&sub_type=form&tags=" + encodeURIComponent(tags.join(',')), function(data) {
                         /* do nothing */
                     });
                 }, 1500);
 
                 function scrollEgngaged(event) {
-                    $.get("/papi//persist.php?op=scrolled", function(data) {
+                    $.get("/papi/persist.php?op=scrolled", function(data) {
                         /* do nothing */
                     });
                     document.removeEventListener('scroll', scrollEgngaged, true);
