@@ -315,53 +315,8 @@
                                         <button id="q1-next" class="btn form-btn btn-next" type="button">Next</button>
                                     </div>
                                 </fieldset>
-                                <fieldset id="form-step2" class="form-steps fieldset-1" data-step="2" style="display: none;" data-tag="zip">
-                                    <legend hidden="true">zipcode</legend>
-                                    <h3 class="form_box-question">What is your Address?</h3>
 
-                                    <div class="form-group">
-                                        <label style="visibility: hidden; position: absolute;" for="zip">Zip Code</label>
-                                        <input id="address" class="form-control" type="text" name="full_address" placeholder="Address" value="" required>
-
-                                        <input  id="city" class="form-control" type="text" name="city" placeholder="City" value="" required>
-                                        <input  id="zip" class="form-control zipcode" type="tel" name="zip_code" pattern="[0-9]{5}" title="Enter Your ZIP Code" maxlength="5" minlength="5" placeholder="Enter Your ZIP Code" value="" required>
-                                        <input type="hidden" id="state" class="form-control state" type="text" name="state" title="Enter Your state" placeholder="Enter Your State Name" value="" required>
-                                        <!-- <input id="state" name="state" value=""> -->
-
-                                        <div id="zip_code_error" class="form-error-message">Please enter a valid US Zip
-                                            Code.
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col col-xs-6 colback"><a class="btn btn-link btn-back">Back</a></div>
-                                        <div class="col col-xs-6">
-                                            <div class="form-btns ml-auto text-right">
-                                                <button id="q2-next" class="btn form-btn btn-next" id="btnzip" type="button"><span class="btn-text">Next</span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset id="form-step3" class="form-steps fieldset-2" data-step="3" style="display: none;" data-tag="utilityprovider">
-                                    <legend hidden="true">utility</legend>
-                                    <h3 class="form_box-question">Who's your electric utility provider?</h3>
-                                    <div class="form-group">
-                                        <label for="provider-select" class="label" style="visibility: hidden; position: absolute;">
-                                            Who's your utility provider? </label>
-                                        <select name="utility_provider" type="text" id="provider-select" class="form-control custom-select" data-tf-value="">
-                                        </select>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col col-xs-6 colback"><a class="btn btn-link btn-back">Back</a></div>
-                                        <div class="col col-xs-6">
-                                            <div class="form-btns ml-auto text-right">
-                                                <button id="q3-next" class="btn form-btn btn-next" type="button"><span class="btn-text">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset id="form-step4" class="form-steps fieldset-3" data-step="4" style="display: none;" data-tag="utilitybill">
+                                <fieldset id="form-step2" class="form-steps fieldset-1" data-step="2" style="display: none;" data-tag="utilitybill">
                                     <legend hidden="true">electric bill</legend>
                                     <h3 class="form_box-question">How much is your average monthly electric bill?</h3>
                                     <div class="form-group">
@@ -384,7 +339,7 @@
                                         </div>
                                     </div>
                                 </fieldset>
-                                <fieldset id="form-step5" class="form-steps fieldset-4" data-step="5" style="display: none;" data-tag="roofshade">
+                                <fieldset id="form-step3" class="form-steps fieldset-2" data-step="3" style="display: none;" data-tag="roofshade">
                                     <legend hidden="true">roof's sun exposure</legend>
                                     <h3 class="form_box-question">How sunny is your roof area?</h3>
                                     <div class="form-group radio-next">
@@ -412,6 +367,52 @@
                                         <div class="col col-xs-6">
                                             <div class="form-btns ml-auto text-right">
                                                 <button id="q5-next" class="btn form-btn btn-next" type="button"><span class="btn-text">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="form-step4" class="form-steps fieldset-3" data-step="4" style="display: none;" data-tag="zip">
+                                    <legend hidden="true">zipcode</legend>
+                                    <h3 class="form_box-question">What is your Address?</h3>
+
+                                    <div class="form-group">
+                                        <label style="visibility: hidden; position: absolute;" for="zip">Zip Code</label>
+                                        <input id="address" class="form-control" type="text" name="full_address" placeholder="Address" value="" required>
+
+                                        <input  id="city" class="form-control" type="text" name="city" placeholder="City" value="" required>
+                                        <input  id="zip" class="form-control zipcode" type="tel" name="zip_code" pattern="[0-9]{5}" title="Enter Your ZIP Code" maxlength="5" minlength="5" placeholder="Enter Your ZIP Code" value="" required>
+                                        <input type="hidden" id="state" class="form-control state" type="text" name="state" title="Enter Your state" placeholder="Enter Your State Name" value="" required>
+                                        <!-- <input id="state" name="state" value=""> -->
+
+                                        <div id="zip_code_error" class="form-error-message">Please enter a valid US Zip
+                                            Code.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-xs-6 colback"><a class="btn btn-link btn-back">Back</a></div>
+                                        <div class="col col-xs-6">
+                                            <div class="form-btns ml-auto text-right">
+                                                <button id="q2-next" class="btn form-btn btn-next" id="btnzip" type="button"><span class="btn-text">Next</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset id="form-step5" class="form-steps fieldset-4" data-step="5" style="display: none;" data-tag="utilityprovider">
+                                    <legend hidden="true">utility</legend>
+                                    <h3 class="form_box-question">Who's your electric utility provider?</h3>
+                                    <div class="form-group">
+                                        <label for="provider-select" class="label" style="visibility: hidden; position: absolute;">
+                                            Who's your utility provider? </label>
+                                        <select name="utility_provider" type="text" id="provider-select" class="form-control custom-select" data-tf-value="">
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-xs-6 colback"><a class="btn btn-link btn-back">Back</a></div>
+                                        <div class="col col-xs-6">
+                                            <div class="form-btns ml-auto text-right">
+                                                <button id="q3-next" class="btn form-btn btn-next" type="button"><span class="btn-text">Next</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -638,7 +639,7 @@ console.log(data)
 
 
 try {
-                        fetch('https://pingpost.pro/leads/new', {
+                        fetch('https://pingpost.pro/leads/test', {
                                 headers: {
                                     
                                     "Content-Type":"application/x-www-form-urlencoded"
