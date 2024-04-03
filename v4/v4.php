@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-
+    
+    <script type="text/javascript" src="https://trk.truesolarrates.com/track.js?rtkcmpid=660c96111d670a0001e8ecc0"></script>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places&callback=initAutocomplete" async defer></script>
 
@@ -27,7 +28,15 @@
         var campName = urlParams.get('sub5');
 
     </script>
+<script>
+    let funcc = function(){
+ var rdtrackCookie = ('; '+document.cookie).split(`; rtkclickid-store=`).pop().split(';')[0];
 
+(window._rgba_tags = (window._rgba_tags || [])).push({"s2": rdtrackCookie});
+}
+
+setTimeout(funcc, 3000)
+</script>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
