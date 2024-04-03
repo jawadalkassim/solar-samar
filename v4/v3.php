@@ -572,8 +572,8 @@ setTimeout(funcc, 3000)
                         postalCode: zip || "00000",
                         tags: ['incomplete', 'solar'],
                         customField: {
-                            "ygJrtzj4XoDNcy5niXmZ": transaction_id,
-                            "xOvXeJ1Qu504JlUyTX31": RedTrack,
+                            "ygJrtzj4XoDNcy5niXmZ": RedTrack,
+                            "xOvXeJ1Qu504JlUyTX31": subid,
                             "68FhdBJOovz8Nhqxuij9": ip_address,
                             "x3sUxnswifmfUCLNF8hE": solar_electric,
                             "jLtwAkky4jo5Xcsa3yiB": trustefForm,
@@ -642,7 +642,7 @@ const lead_id_code = $("#leadid_token").val()
 const provider = $("#provider-select").val()
 
 
-const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${RedTrack}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${RedTrack}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
 console.log('tf data')
 console.log(data)
 
@@ -17532,8 +17532,8 @@ document.getElementById("q11-next").addEventListener("click", function() {
                         postalCode: zip || "00000",
                         tags: ['incomplete', 'solar'],
                         customField: {
-                            "ygJrtzj4XoDNcy5niXmZ": transaction_id,
-                            "xOvXeJ1Qu504JlUyTX31": RedTrack,
+                            "ygJrtzj4XoDNcy5niXmZ": RedTrack,
+                            "xOvXeJ1Qu504JlUyTX31": subid,
                             "68FhdBJOovz8Nhqxuij9": ip_address,
                             "x3sUxnswifmfUCLNF8hE": solar_electric,
                             "jLtwAkky4jo5Xcsa3yiB": trustefForm,
