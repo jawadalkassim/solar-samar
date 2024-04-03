@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    
-    <script type="text/javascript" src="https://trk.truesolarrates.com/track.js?rtkcmpid=660c96111d670a0001e8ecc0"></script>
+
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHd616z8ddRLnmOnN2Stk-1BDHNJZOQSo&libraries=places&callback=initAutocomplete" async defer></script>
 
@@ -28,17 +27,7 @@
         var campName = urlParams.get('sub5');
 
     </script>
-<script>
-    let funcc = function(){
- let rdtrackCookie = ('; '+document.cookie).split(`; rtkclickid-store=`).pop().split(';')[0];
 
-(window._rgba_tags = (window._rgba_tags || [])).push({"s2": rdtrackCookie});
-window.RedTrack = window._rgba_tags[0].s2;
-
-}
-
-setTimeout(funcc, 3000)
-</script>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -643,7 +632,8 @@ const zip = $("#zip").val()
 const lead_id_code = $("#leadid_token").val()
 const provider = $("#provider-select").val()
 
-const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${RedTrack}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+
+const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${transaction_id}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
 console.log('tf data')
 console.log(data)
 
@@ -17534,7 +17524,7 @@ document.getElementById("q11-next").addEventListener("click", function() {
                         tags: ['incomplete', 'solar'],
                         customField: {
                             "ygJrtzj4XoDNcy5niXmZ": transaction_id,
-                            "xOvXeJ1Qu504JlUyTX31": RedTrack,
+                            "xOvXeJ1Qu504JlUyTX31": subid,
                             "68FhdBJOovz8Nhqxuij9": ip_address,
                             "x3sUxnswifmfUCLNF8hE": solar_electric,
                             "jLtwAkky4jo5Xcsa3yiB": trustefForm,
