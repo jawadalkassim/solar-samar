@@ -33,7 +33,7 @@
  let rdtrackCookie = ('; '+document.cookie).split(`; rtkclickid-store=`).pop().split(';')[0];
 
 (window._rgba_tags = (window._rgba_tags || [])).push({"s2": rdtrackCookie});
-var RedTrack = window._rgba_tags[0].s2;
+window.RedTrack = window._rgba_tags[0].s2;
 
 }
 
