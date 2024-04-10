@@ -59,7 +59,7 @@
                 <div class="navbar-collapse collapse  w-100" id="navigation">
                     <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link btn btn-grad text-uppercase" href="trk.truesolarrates.com/click" target="_blank">
+                            <a class="nav-link btn btn-grad text-uppercase" href="https://trk.truesolarrates.com/click" target="_blank">
                                 See If You Qualify <i></i>
                                 <span class="btn-bg grad"></span>
                             </a>
@@ -132,7 +132,7 @@
                             If your home generates more solar power than it needs, your power company is required to pay you money for the surplus power!
                         </p>
                         <center>
-                            <a href="trk.truesolarrates.com/click" target="blank" class="btn-lg mx-auto text-uppercase" style="color: #fff; margin-top:-10px;">See If My Home Qualifies</a>
+                            <a href="https://trk.truesolarrates.com/click" target="blank" class="btn-lg mx-auto text-uppercase" style="color: #fff; margin-top:-10px;">See If My Home Qualifies</a>
                         </center>
                         <p>These factors have contributed to a 34% increase in residential solar power installations in the US over the past year.</p>
                         <p>And who can blame them? With energy prices at an all-time high and continuing to rise rapidly, hard-working Americans are searching for ways to keep the lights on and put food on the table. 
@@ -147,7 +147,7 @@
                         <p>
                             Since every state offers different incentives, we found that using the 
                             <b>
-                                <a href="trk.truesolarrates.com/click" target="_blank">free Clever Solar Techs™ Solar Tool</a>
+                                <a href="https://trk.truesolarrates.com/click" target="_blank">free Clever Solar Techs™ Solar Tool</a>
                             </b>
                             is the 
 				best way to find out which solar incentives are offered in your area. 
@@ -159,7 +159,7 @@
                         <p>
                             <b>Step 1:</b>
                             <b>
-                                <a href="trk.truesolarrates.com/click" target="_blank">Click here or tap your state below to get started.</a>
+                                <a href="https://trk.truesolarrates.com/click" target="_blank">Click here or tap your state below to get started.</a>
                             </b>
                         </p>
                         <p>
@@ -167,7 +167,7 @@
                             Once you enter your zip code and enter some basic home info, you'll be able to see if you qualify! It's really that easy!
                         </p>
                         <div class="articleMap">
-                            <a href="trk.truesolarrates.com/click" onClick="return true;" target="_blank">
+                            <a href="https://trk.truesolarrates.com/click" onClick="return true;" target="_blank">
                                 <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 340" style="enable-background:new 0 0 600 340;" xml:space="preserve">
                                     <g id="Wyoming">
                                         <path class="stateImage" d="M199.07,80.68c-12.9-0.98-28.28-2.68-44.46-4.89c-4.27-0.59-10.06-1.34-12.74-1.6
@@ -1709,7 +1709,7 @@
                             </a>
                         </div>
                         <center>
-                            <a href="trk.truesolarrates.com/click" target="new" class="btn-lg mx-auto text-uppercase" style="color: #fff">Yes! See If I Qualify!</a>
+                            <a href="https://trk.truesolarrates.com/click" target="new" class="btn-lg mx-auto text-uppercase" style="color: #fff">Yes! See If I Qualify!</a>
                         </center>
                     </div>
                     <br>
