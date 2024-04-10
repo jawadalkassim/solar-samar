@@ -14,7 +14,6 @@
         <!-- Bootstrap -->
         <link href="./css/bootstrap.css" rel="stylesheet">
         <link href="./css/content.css" rel="stylesheet">
-        <!-- Redtrack -->
      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,10 +46,7 @@
         </style>
     </head>
     <body>
-        <!--[if lt IE 9]>
-		<p class="outdated">You are using an outdated browser. <a href="https://browsehappy.com/">Upgrade your browser today</a> or <a href="https://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-	<![endif]-->
-
+    
         <header class="off on">
             <nav class="navbar navbar-expand-md justify-content-center mx-auto">
                 <span class="navbar-brand d-flex  m-0">
