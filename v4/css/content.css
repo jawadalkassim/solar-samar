@@ -37,7 +37,7 @@ main{padding-top: 3rem}
 
 
 
-footer{background:#14284d!important;padding-top:5rem!important;padding-bottom:4rem!important;color:#fff;font-weight:300; text-align: center}
+footer{background:#14284d !important;padding-bottom:4rem!important;color:#fff;font-weight:300; text-align: center}
 footer p {font-size: .8rem}
 footer p:not(:last-of-type){margin-bottom: 1rem}
 footer .list-inline {font-size:0.8rem !important;  border-top: solid 1px #ffffff1c;  border-bottom: solid 1px #ffffff1c;  

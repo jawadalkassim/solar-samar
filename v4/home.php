@@ -1725,8 +1725,8 @@
                 <br>
                 <br>
                 <ul class="list-inline">
-                    <li>© Copyright Clever Solar Techs. 2023</li>
-                    <li class=""></li>
+                    <li>© Copyright Clever Solar Techs. 2024</li>
+                    <!-- <li class=""></li>
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
@@ -1738,7 +1738,7 @@
                     </li>
                     <li>
                         <a href="privacy.html#ccpa">CCPA</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <p>*This Is An Advertisement (Advertorial) And Not An Actual News Article, Blog, Or Consumer Protection Update</p>
                 <p>Any Story Depicted On This Site And The Person(S) Depicted In The Story Are Not Real. Rather, Any Story May Be Based On Results That Some People Who Have Used These Or Similar Products And Or Services May Achieve. The Results Portrayed In The Story And In The Comments Are Illustrative, And May Not Be The Results That You Achieve With These Products. This Page Receives Compensation For Clicks On Or Purchase Of Products Featured On This Site.</p>

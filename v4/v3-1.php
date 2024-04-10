@@ -231,8 +231,8 @@ setTimeout(funcc, 3000)
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 offset-lg-2">
                     <div id="form-header" class="heading-survey">
-                        <h3>Get your free quote!</h3>
-                        <h4>Take this questionnaire for your free quote!</h4>
+                        <h3>See if you qualify today</h3>
+                        <h4>Take this questionnaire to see if you qualify for the government incentives</h4>
                     </div>
                     <div class="banner-form-wrap">
                         <div class="progress_box">
