@@ -67,21 +67,7 @@
         <main class="post pt-0">
             <section class="container pt-4 pb-5">
                 <div class="post-title text-center">
-                    <!--<p class="meta text-center">-->
-                    <!--<span class="style2">
-						<script language="Javascript">
-							var monthNames = new Array(
-							"January","February","March","April","May","June","July",
-							"August","September","October","November","December");
-							var now = new Date();
-							document.write(monthNames[now.getMonth()] + " " + now.getDate() );
-                            </script>
-				  </span>-->
-                    <!--<span>•</span>-->
-                    <!--<span  title="tags" class="text-uppercase highlight"><b>- HOMEOWNER SAVINGS -</b></span>-->
-                    <!--<span>•</span>-->
-                    <!--<span class="style2">Advertorial</span>-->
-                    <!--  </p>-->
+                   
                     <h1 class="articleTitle">Millions of US Homeowners Quit Paying Energy Bills Thanks To New Solar Incentives</h1>
                 </div>
                 <article class="container">
@@ -148,7 +134,7 @@
                             is the 
 				best way to find out which solar incentives are offered in your area. 
                         </p>
-                        <!--<p>With so many homeowners going solar and saving on their power bills, no wonder services like these are growing rapidly.</p>-->
+                       
                         <p class="md">
                             <b>Want to see if you qualify for zero-cost solar installation?</b>
                         </p>
@@ -1744,9 +1730,7 @@
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <!--[if lte IE 8]>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<![endif]-->
+  
       
         <script>
             (function() {
