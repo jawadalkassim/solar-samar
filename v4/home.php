@@ -11,6 +11,19 @@
         <link rel="icon" type="image/png" href="../../img/favicon.png">
  
 <script type="text/javascript" src="https://trk.truesolarrates.com/track.js?rtkcmpid=6616eee26b9f8f0001902ac2"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16519188399"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16519188399');
+</script>
+
+
         <!-- Bootstrap -->
         <link href="./css/bootstrap.css" rel="stylesheet">
         <link href="./css/content.css" rel="stylesheet">
@@ -1702,6 +1715,11 @@
             </section>
         </main>
         <footer>
+            <script>
+                document.querySelectorAll("[href]").forEach(x => x.addEventListener("click", function(){
+gtag('event', 'conversion', {'send_to': 'AW-16519188399/1vChCJTl06YZEK-f-8Q9'});
+}))
+            </script>
             <div class="container">
                 <br>
                 <br>
