@@ -25,6 +25,7 @@
         var subid = urlParams.get('sub1');
         var transaction_id = urlParams.get('sub2');
         var campName = urlParams.get('sub5');
+        var utm_source = urlParams.get('sub8') || "google";
 
     </script>
 <script>
@@ -642,7 +643,7 @@ const lead_id_code = $("#leadid_token").val()
 const provider = $("#provider-select").val()
 
 
-const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${RedTrack}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}`
+const data = `campid=9645438F40EAC4FD&property_ownership=${property_ownership}&electric_bill=${electric_bill}&roof_shade=${roof_shade}&first_name=${first_name}&last_name=${last_name}&phone_home=${phone_home}&street=${address}&email=${email}&city=${city}&state=${state}&zip=${zip}&solar_electric=true&ip_address=${ipadr}&xxTrustedFormCertUrl=${document.querySelector("#xxTrustedFormCertUrl_0").value}&subid=${subid}&transaction_id=${RedTrack}&electricUtilityProviderText=${provider}&agent=${window.navigator.userAgent}&universal_leadid=${lead_id_code}&utm_source=${utm_source}`
 console.log('tf data')
 console.log(data)
 
