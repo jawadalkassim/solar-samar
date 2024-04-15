@@ -1704,7 +1704,7 @@
                             </a>
                         </div>
                         <center>
-                            <a href="https://trk.truesolarrates.com/click" target="new" class="btn-lg mx-auto text-uppercase" style="color: #fff">Yes! See If I Qualify!</a>
+                            <a href="https://trk.truesolarrates.com/click" class="btn-lg mx-auto text-uppercase" style="color: #fff">Yes! See If I Qualify!</a>
                         </center>
                     </div>
                     <br>
