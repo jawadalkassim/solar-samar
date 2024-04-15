@@ -127,7 +127,7 @@
                             If your home generates more solar power than it needs, your power company is required to pay you money for the surplus power!
                         </p>
                         <center>
-                            <a href="https://trk.truesolarrates.com/click" target="blank" class="btn-lg mx-auto text-uppercase" style="color: #fff; margin-top:-10px;">See If My Home Qualifies</a>
+                            <a href="https://trk.truesolarrates.com/click"  class="btn-lg mx-auto text-uppercase" style="color: #fff; margin-top:-10px;">See If My Home Qualifies</a>
                         </center>
                         <p>These factors have contributed to a 34% increase in residential solar power installations in the US over the past year.</p>
                         <p>And who can blame them? With energy prices at an all-time high and continuing to rise rapidly, hard-working Americans are searching for ways to keep the lights on and put food on the table. 
