@@ -90,7 +90,7 @@ input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:fo
 }
 
 #tcpa_label {
-    font-size: 12px !important
+    font-size: 7px !important
 }
 
 .progress-box {
@@ -548,7 +548,7 @@ div#utility_provider {
 }
 
 .terms_txt a, .terms_txt a:hover {
-    color: blue;
+    color: black;
     text-decoration: underline
 }
 
